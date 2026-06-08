@@ -12,34 +12,56 @@ npm run dev
 
 The book opens with a cover page, followed by an introduction explaining what programming languages are and how they are categorized into **Frontend**, **Backend**, and **Full Stack**.
 
-Each language has its own two-page spread with:
+Each language has its own dedicated two-page spread:
 
-- Language logo
-- Category badge (Frontend / Backend / Full Stack)
-- Short description
-- Main use cases
-- A simple code example
-- A fun fact
+**Page 1 (left):**
+- Language logo, name, and category badge
+- Rich historical background and philosophy
+- Key features (bullet list)
+- Main areas of use
+
+**Page 2 (right):**
+- Multiple fun facts and trivia
+- Notable companies using the language
+- Pros and Cons comparison
+- A practical code example
+
+## Quiz: Test Your Knowledge
+
+After all 15 languages, the book includes a **15-question quiz** (one question per language).
+
+- Each question has **4 options** with radio buttons
+- **+2 points** for a correct answer
+- **-1 point** for a wrong answer
+- Instant feedback after answering each spread
+- Final score with a personalized message
 
 ## Languages Included
 
-| Pages | Language | Category |
+| Spread | Language | Category |
 |---|---|---|
-| 2-3 | Python | Backend |
-| 4-5 | JavaScript | Frontend / Full Stack |
-| 6-7 | Java | Backend |
-| 8-9 | C++ | Backend |
-| 10-11 | C# | Full Stack |
-| 12-13 | Go | Backend |
-| 14-15 | Rust | Backend |
-| 16-17 | TypeScript | Frontend / Full Stack |
-| 18-19 | PHP | Backend |
-| 20-21 | Ruby | Backend |
-| 22-23 | Kotlin | Backend |
-| 24-25 | Swift | Backend |
-| 26-27 | Dart | Frontend |
-| 28-29 | Scala | Backend |
-| 30-31 | Elixir | Backend |
+| 2 | Python | Backend |
+| 3 | JavaScript | Frontend |
+| 4 | Java | Backend |
+| 5 | C++ | Backend |
+| 6 | C# | Full Stack |
+| 7 | Go | Backend |
+| 8 | Rust | Backend |
+| 9 | TypeScript | Frontend |
+| 10 | PHP | Backend |
+| 11 | Ruby | Backend |
+| 12 | Kotlin | Backend |
+| 13 | Swift | Backend |
+| 14 | Dart | Frontend |
+| 15 | Scala | Backend |
+| 16 | Elixir | Backend |
+
+## Navigation
+
+- **Arrow buttons** on the sides of the book
+- **Keyboard arrows** (left / right)
+- **Click** on the left or right half of a page
+- **Touch swipe** on mobile devices
 
 ## Bilingual Support
 
@@ -49,9 +71,14 @@ Toggle between **Shqip** (Albanian) and **English** using the button in the top-
 
 - [Vite](https://vite.dev/)
 - [React](https://react.dev/)
-- CSS 3D transforms for page-flip animation
+- CSS 3D transforms with page-curl shadow animation
 - [Devicon](https://devicon.dev/) for language logos
+- [gh-pages](https://www.npmjs.com/package/gh-pages) for deployment
+
+## Live Demo
+
+[https://ArditCeno.github.io/ProgrammingLanguage/](https://ArditCeno.github.io/ProgrammingLanguage/)
 
 ## About This Project
 
-This was a spontaneous side project — I built it while waiting for a large file to download. What started as a quick way to kill time turned into a fully functional interactive book about programming languages. Proof that sometimes the best projects are the ones you never planned.
+This was a spontaneous side project — I built it while waiting for a large file to download. What started as a quick way to kill time turned into a fully functional interactive book about programming languages with 15 languages, rich content, and a quiz.
