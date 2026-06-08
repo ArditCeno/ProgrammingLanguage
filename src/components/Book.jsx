@@ -48,9 +48,7 @@ function CoverPage({ onStart }) {
 }
 
 function Endpaper() {
-  return (
-    <div className="endpaper" />
-  )
+  return <div className="endpaper" />
 }
 
 function IntroPage({ side }) {
@@ -199,7 +197,7 @@ export default function Book() {
   const [animState, setAnimState] = useState('idle')
   const [showHint, setShowHint] = useState(true)
   const animRef = useRef(null)
-  const hintRef = useRef(null)
+  const touchRef = useRef({ startX: 0, startY: 0 })
 
   const handleNext = useCallback(() => {
     if (animState !== 'idle' || spread >= TOTAL_SPREADS - 1) return
@@ -207,7 +205,7 @@ export default function Book() {
     animRef.current = setTimeout(() => {
       setSpread(s => s + 1)
       setAnimState('idle')
-    }, 1250)
+    }, 1150)
   }, [animState, spread])
 
   const handlePrev = useCallback(() => {
@@ -216,25 +214,47 @@ export default function Book() {
     animRef.current = setTimeout(() => {
       setSpread(s => s - 1)
       setAnimState('idle')
-    }, 1250)
+    }, 1150)
   }, [animState, spread])
 
   /* Keyboard navigation */
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (e.key === 'ArrowRight') {
-        e.preventDefault()
-        handleNext()
-      } else if (e.key === 'ArrowLeft') {
-        e.preventDefault()
-        handlePrev()
-      }
+      if (e.key === 'ArrowRight') { e.preventDefault(); handleNext() }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); handlePrev() }
     }
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
   }, [handleNext, handlePrev])
 
-  /* Hide keyboard hint after first interaction */
+  /* Touch swipe navigation */
+  useEffect(() => {
+    const el = document.querySelector('.book-wrapper')
+    if (!el) return
+
+    const onTouchStart = (e) => {
+      const t = e.touches[0]
+      touchRef.current = { startX: t.clientX, startY: t.clientY }
+    }
+
+    const onTouchEnd = (e) => {
+      const t = e.changedTouches[0]
+      const dx = t.clientX - touchRef.current.startX
+      const dy = t.clientY - touchRef.current.startY
+      if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy) * 0.7) return
+      if (dx > 0) handlePrev()
+      else handleNext()
+    }
+
+    el.addEventListener('touchstart', onTouchStart, { passive: true })
+    el.addEventListener('touchend', onTouchEnd, { passive: true })
+    return () => {
+      el.removeEventListener('touchstart', onTouchStart)
+      el.removeEventListener('touchend', onTouchEnd)
+    }
+  }, [handleNext, handlePrev])
+
+  /* Hide keyboard hint */
   useEffect(() => {
     if (spread > 0 && showHint) {
       const timer = setTimeout(() => setShowHint(false), 4000)
@@ -242,14 +262,13 @@ export default function Book() {
     }
   }, [spread, showHint])
 
-  /* Click on left/right half of the book */
   const handleClickLeft = useCallback(() => {
     if (spread > 0) handlePrev()
   }, [spread, handlePrev])
 
   const handleClickRight = useCallback(() => {
     if (spread < TOTAL_SPREADS - 1) handleNext()
-  }, [spread, handleNext, TOTAL_SPREADS])
+  }, [spread, handleNext])
 
   const getLabel = () => {
     if (spread === 0) return ''
@@ -308,6 +327,7 @@ export default function Book() {
                   onStart={handleNext}
                 />
                 <div className="flipping-page next active">
+                  <div className="flip-shadow" />
                   <div className="flip-front">
                     <FlipContent spreadIndex={spread} side="right" onStart={handleNext} />
                     {renderPageNumber(spread, 'right')}
@@ -339,6 +359,7 @@ export default function Book() {
                   onStart={handleNext}
                 />
                 <div className="flipping-page prev active">
+                  <div className="flip-shadow" />
                   <div className="flip-front">
                     <FlipContent spreadIndex={spread} side="left" onStart={handleNext} />
                     {renderPageNumber(spread, 'left')}
@@ -353,7 +374,6 @@ export default function Book() {
               </>
             )}
 
-            {/* Click zones on book pages */}
             {!isFlipping && spread > 0 && (
               <div className="click-left" onClick={handleClickLeft} />
             )}
@@ -367,7 +387,7 @@ export default function Book() {
               className="nav-btn nav-prev"
               onClick={handlePrev}
               disabled={isFlipping}
-              aria-label="Previous"
+              aria-label="Previous page"
             >
               &#8249;
             </button>
@@ -377,7 +397,7 @@ export default function Book() {
               className="nav-btn nav-next"
               onClick={handleNext}
               disabled={isFlipping}
-              aria-label="Next"
+              aria-label="Next page"
             >
               &#8250;
             </button>
@@ -398,7 +418,7 @@ export default function Book() {
 
       <div className={`keyboard-hint ${!showHint || spread === 0 ? 'hidden' : ''}`}>
         <kbd>&larr;</kbd>
-        <span> ose kliko majtas &nbsp;&middot;&nbsp; </span>
+        <span> ose kliko majtas  &middot;  </span>
         <kbd>&rarr;</kbd>
         <span> ose kliko djathtas</span>
       </div>
