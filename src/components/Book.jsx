@@ -1,103 +1,360 @@
-import { useState, useCallback } from 'react'
-import BookCover from './BookCover'
-import Introduction from './Introduction'
-import LanguageSpread from './LanguageSpread'
+import { useState, useCallback, useRef } from 'react'
 import LanguageToggle from './LanguageToggle'
 import '../styles/book.css'
 import content from '../data/content.json'
+import { useLanguage } from '../context/LanguageContext'
 
-const TOTAL_SPREADS = 1 + 1 + Math.ceil(content.languages.length / 2)
+const categoryColors = {
+  'Frontend': { bg: 'rgba(245, 158, 11, 0.15)', color: '#d97706', label: 'Frontend' },
+  'Backend': { bg: 'rgba(59, 130, 246, 0.15)', color: '#2563eb', label: 'Backend' },
+  'Full Stack': { bg: 'rgba(139, 92, 246, 0.15)', color: '#7c3aed', label: 'Full Stack' },
+}
+
+const languages = content.languages
+const TOTAL_SPREADS = 1 + 1 + Math.ceil(languages.length / 2)
+
+/* ====== RENDER HELPERS ====== */
+
+function CoverPage({ onStart }) {
+  return (
+    <div className="cover-page">
+      <div className="cover-content">
+        <div className="cover-decoration">
+          <div className="cover-line" />
+          <span className="cover-icon">&#128218;</span>
+          <div className="cover-line" />
+        </div>
+        <h1 className="cover-title">GJUHET E PROGRAMIMIT</h1>
+        <p className="cover-subtitle">
+          Një udhëzues për 15 gjuhët më të njohura të programimit
+        </p>
+        <div className="cover-categories">
+          <span className="cover-cat frontend">Frontend</span>
+          <span className="cover-cat backend">Backend</span>
+          <span className="cover-cat fullstack">Full Stack</span>
+        </div>
+        <button className="cover-btn" onClick={onStart}>
+          Hape Librin
+        </button>
+      </div>
+    </div>
+  )
+}
+
+function Endpaper() {
+  return (
+    <div className="endpaper">
+      <div className="endpaper-pattern" />
+    </div>
+  )
+}
+
+function IntroPage({ side }) {
+  const { language } = useLanguage()
+  const { title, paragraphs } = content.introduction[language]
+
+  if (side === 'left') {
+    return (
+      <div className="intro-content">
+        <h2 className="intro-title">{title}</h2>
+        {paragraphs.slice(0, 2).map((p, i) => (
+          <p key={i} className="intro-paragraph">{p}</p>
+        ))}
+      </div>
+    )
+  }
+
+  return (
+    <div className="intro-content">
+      {paragraphs.slice(2).map((p, i) => (
+        <p key={i} className="intro-paragraph">{p}</p>
+      ))}
+      <div className="intro-categories">
+        <div className="intro-cat-card frontend-bg">
+          <span className="intro-cat-icon">&#127760;</span>
+          <h3>{language === 'sq' ? 'Frontend' : 'Frontend'}</h3>
+          <p>{language === 'sq' ? 'Ndërfaqja vizuele e web-it' : 'Visual interface of the web'}</p>
+        </div>
+        <div className="intro-cat-card backend-bg">
+          <span className="intro-cat-icon">&#9881;</span>
+          <h3>{language === 'sq' ? 'Backend' : 'Backend'}</h3>
+          <p>{language === 'sq' ? 'Logjika dhe të dhënat në server' : 'Server logic and data'}</p>
+        </div>
+        <div className="intro-cat-card fullstack-bg">
+          <span className="intro-cat-icon">&#128187;</span>
+          <h3>{language === 'sq' ? 'Full Stack' : 'Full Stack'}</h3>
+          <p>{language === 'sq' ? 'Frontend + Backend së bashku' : 'Frontend + Backend together'}</p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function LanguagePage({ lang }) {
+  const { language } = useLanguage()
+  const cat = categoryColors[lang.category]
+  const data = lang[language]
+
+  return (
+    <div className="lang-page">
+      <div className="lang-header">
+        <img
+          className="lang-logo"
+          src={lang.logoUrl}
+          alt={lang.name}
+          onError={(e) => { e.target.style.display = 'none' }}
+        />
+        <h2 className="lang-name">{lang.name}</h2>
+        <span
+          className="lang-category"
+          style={{ backgroundColor: cat.bg, color: cat.color, border: `1px solid ${cat.color}` }}
+        >
+          {cat.label}
+        </span>
+      </div>
+      <p className="lang-description">{data.description}</p>
+      <div className="lang-usage">
+        <strong>{language === 'sq' ? 'Përdoret për:' : 'Used for:'}</strong> {data.usage}
+      </div>
+      <div className="lang-code">
+        <div className="code-header">
+          <span className="code-dot red" />
+          <span className="code-dot yellow" />
+          <span className="code-dot green" />
+          <span className="code-label">{language === 'sq' ? 'Shembull' : 'Example'}</span>
+        </div>
+        <pre><code>{data.example}</code></pre>
+      </div>
+      <div className="lang-funfact">
+        <span className="funfact-icon">&#9889;</span>
+        <p>{data.funFact}</p>
+      </div>
+    </div>
+  )
+}
+
+/* ====== SPREAD RENDERERS ====== */
+
+function renderLeftHalf(spreadIndex) {
+  if (spreadIndex === 0) return <Endpaper />
+  if (spreadIndex === 1) return <IntroPage side="left" />
+  const langIdx = (spreadIndex - 2) * 2
+  const lang = languages[langIdx]
+  return lang ? <LanguagePage lang={lang} /> : null
+}
+
+function renderRightHalf(spreadIndex, onStart) {
+  if (spreadIndex === 0) return <CoverPage onStart={onStart} />
+  if (spreadIndex === 1) return <IntroPage side="right" />
+  const langIdx = (spreadIndex - 2) * 2 + 1
+  const lang = languages[Math.min(langIdx, languages.length - 1)]
+  return lang ? <LanguagePage lang={lang} /> : null
+}
+
+function renderPageNumber(spreadIndex, side) {
+  if (spreadIndex === 0) return null
+  const num = spreadIndex <= 1
+    ? (side === 'left' ? 'ii' : 'iii')
+    : String((spreadIndex - 2) * 2 + (side === 'left' ? 1 : 2))
+  return <span className={`page-number ${side}`}>{num}</span>
+}
+
+/* ====== BOOK CONTENT (the actual spread) ====== */
+
+function BookContent({ spreadIndex, showLeft, showRight, flipping, onStart }) {
+  return (
+    <>
+      {showLeft && (
+        <div className={`left-page${flipping === 'prev' ? ' flip-hidden' : ''}`}>
+          {renderLeftHalf(spreadIndex)}
+          {renderPageNumber(spreadIndex, 'left')}
+        </div>
+      )}
+      {showRight && (
+        <div className={`right-page${flipping === 'next' ? ' flip-hidden' : ''}`}>
+          {renderRightHalf(spreadIndex, onStart)}
+          {renderPageNumber(spreadIndex, 'right')}
+        </div>
+      )}
+    </>
+  )
+}
+
+/* ====== FLIP PAGE CONTENT (used inside flipping page) ====== */
+
+function FlipContent({ spreadIndex, side, onStart }) {
+  return (
+    <div className="flip-content">
+      {side === 'left' ? renderLeftHalf(spreadIndex) : renderRightHalf(spreadIndex, onStart)}
+    </div>
+  )
+}
+
+/* ====== MAIN BOOK COMPONENT ====== */
 
 export default function Book() {
   const [spread, setSpread] = useState(0)
-  const [animating, setAnimating] = useState(false)
-  const [direction, setDirection] = useState(null)
+  const [animState, setAnimState] = useState('idle')
+  const animRef = useRef(null)
 
   const handleNext = useCallback(() => {
-    if (animating || spread >= TOTAL_SPREADS - 1) return
-    setDirection('next')
-    setAnimating(true)
-    setTimeout(() => {
+    if (animState !== 'idle' || spread >= TOTAL_SPREADS - 1) return
+    setAnimState('next-flip')
+    animRef.current = setTimeout(() => {
       setSpread(s => s + 1)
-      setAnimating(false)
-      setDirection(null)
-    }, 900)
-  }, [animating, spread])
+      setAnimState('idle')
+    }, 1150)
+  }, [animState, spread])
 
   const handlePrev = useCallback(() => {
-    if (animating || spread <= 0) return
-    setDirection('prev')
-    setAnimating(true)
-    setTimeout(() => {
+    if (animState !== 'idle' || spread <= 0) return
+    setAnimState('prev-flip')
+    animRef.current = setTimeout(() => {
       setSpread(s => s - 1)
-      setAnimating(false)
-      setDirection(null)
-    }, 900)
-  }, [animating, spread])
-
-  const renderSpread = (index) => {
-    if (index === 0) return <BookCover onStart={handleNext} />
-    if (index === 1) return (
-      <div className="page-single"><Introduction /></div>
-    )
-    const langStart = (index - 2) * 2
-    return (
-      <LanguageSpread
-        leftIndex={langStart}
-        rightIndex={Math.min(langStart + 1, content.languages.length - 1)}
-      />
-    )
-  }
+      setAnimState('idle')
+    }, 1150)
+  }, [animState, spread])
 
   const getLabel = () => {
     if (spread === 0) return ''
     if (spread === 1) return 'Hyrje'
-    const langIdx = (spread - 2) * 2
-    const left = content.languages[langIdx]?.name || ''
-    const right = content.languages[langIdx + 1]?.name || ''
+    const idx = (spread - 2) * 2
+    const left = languages[idx]?.name || ''
+    const right = languages[idx + 1]?.name || ''
     return `${left} & ${right}`
   }
+
+  const isFlippingNext = animState === 'next-flip'
+  const isFlippingPrev = animState === 'prev-flip'
+  const isFlipping = isFlippingNext || isFlippingPrev
 
   return (
     <div className="book-wrapper">
       <LanguageToggle />
 
-      <div className="book-3d">
-        {animating && direction === 'next' && (
-          <div className="book-spread target">
-            {renderSpread(spread + 1)}
-          </div>
-        )}
-        {animating && direction === 'prev' && (
-          <div className="book-spread target">
-            {renderSpread(spread - 1)}
-          </div>
-        )}
+      <div className="book-container-outer">
+        <div className="book-shadow" />
 
-        <div className={`book-spread current ${animating ? `flipping-${direction}` : ''}`}>
-          {renderSpread(spread)}
+        <div className="book">
+          {/* Spine */}
+          <div className="book-spine" />
+
+          {/* Page edges */}
+          <div className="page-edges-right" />
+          <div className="page-edges-bottom" />
+
+          {/* Spread area */}
+          <div className="spread-area">
+            <div className="gutter-shadow" />
+
+            {/* Normal state: show current spread */}
+            {!isFlipping && (
+              <BookContent
+                spreadIndex={spread}
+                showLeft
+                showRight
+                flipping={null}
+                onStart={handleNext}
+              />
+            )}
+
+            {/* Flipping NEXT: show target beneath, flip current right page */}
+            {isFlippingNext && (
+              <>
+                {/* Target spread underneath */}
+                <BookContent
+                  spreadIndex={spread + 1}
+                  showLeft
+                  showRight
+                  flipping={null}
+                  onStart={handleNext}
+                />
+
+                {/* Current spread left page stays visible */}
+                <BookContent
+                  spreadIndex={spread}
+                  showLeft
+                  showRight={false}
+                  flipping={null}
+                  onStart={handleNext}
+                />
+
+                {/* Flipping page overlay */}
+                <div className="flipping-page next active">
+                  <div className="flip-front">
+                    <FlipContent spreadIndex={spread} side="right" onStart={handleNext} />
+                    {renderPageNumber(spread, 'right')}
+                  </div>
+                  <div className="flip-back">
+                    <FlipContent spreadIndex={spread + 1} side="left" onStart={handleNext} />
+                    <span className="page-number left" style={{ left: 36 }}>
+                      {spread + 1 <= 1 ? 'ii' : String((spread - 1) * 2 + 1)}
+                    </span>
+                  </div>
+                </div>
+              </>
+            )}
+
+            {/* Flipping PREV: show target beneath, flip current left page */}
+            {isFlippingPrev && (
+              <>
+                {/* Target spread underneath */}
+                <BookContent
+                  spreadIndex={spread - 1}
+                  showLeft
+                  showRight
+                  flipping={null}
+                  onStart={handleNext}
+                />
+
+                {/* Current spread right page stays visible */}
+                <BookContent
+                  spreadIndex={spread}
+                  showLeft={false}
+                  showRight
+                  flipping={null}
+                  onStart={handleNext}
+                />
+
+                {/* Flipping page overlay */}
+                <div className="flipping-page prev active">
+                  <div className="flip-front">
+                    <FlipContent spreadIndex={spread} side="left" onStart={handleNext} />
+                    {renderPageNumber(spread, 'left')}
+                  </div>
+                  <div className="flip-back">
+                    <FlipContent spreadIndex={spread - 1} side="right" onStart={handleNext} />
+                    <span className="page-number right" style={{ right: 36 }}>
+                      {spread - 1 <= 1 ? 'i' : String((spread - 3) * 2 + 2)}
+                    </span>
+                  </div>
+                </div>
+              </>
+            )}
+          </div>
+
+          {/* Navigation buttons */}
+          {spread > 0 && (
+            <button
+              className="nav-btn nav-prev"
+              onClick={handlePrev}
+              disabled={isFlipping || spread <= 0}
+              aria-label="Previous"
+            >
+              &#8249;
+            </button>
+          )}
+          {spread < TOTAL_SPREADS - 1 && (
+            <button
+              className="nav-btn nav-next"
+              onClick={handleNext}
+              disabled={isFlipping || spread >= TOTAL_SPREADS - 1}
+              aria-label="Next"
+            >
+              &#8250;
+            </button>
+          )}
         </div>
-
-        {spread > 0 && (
-          <button
-            className="nav-btn nav-prev"
-            onClick={handlePrev}
-            disabled={animating || spread <= 0}
-            aria-label="Previous"
-          >
-            ‹
-          </button>
-        )}
-        {spread < TOTAL_SPREADS - 1 && (
-          <button
-            className="nav-btn nav-next"
-            onClick={handleNext}
-            disabled={animating || spread >= TOTAL_SPREADS - 1}
-            aria-label="Next"
-          >
-            ›
-          </button>
-        )}
       </div>
 
       {spread > 0 && (
