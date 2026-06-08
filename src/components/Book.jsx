@@ -1,4 +1,4 @@
-import { useState, useCallback, useRef } from 'react'
+import { useState, useCallback, useRef, useEffect } from 'react'
 import LanguageToggle from './LanguageToggle'
 import '../styles/book.css'
 import content from '../data/content.json'
@@ -18,13 +18,19 @@ const TOTAL_SPREADS = 1 + 1 + Math.ceil(languages.length / 2)
 function CoverPage({ onStart }) {
   return (
     <div className="cover-page">
+      <div className="cover-shimmer" />
       <div className="cover-content">
         <div className="cover-decoration">
           <div className="cover-line" />
+          <div className="cover-line-thick" />
           <span className="cover-icon">&#128218;</span>
+          <div className="cover-line-thick" />
           <div className="cover-line" />
         </div>
-        <h1 className="cover-title">GJUHET E PROGRAMIMIT</h1>
+        <h1 className="cover-title">
+          GJUHET E PROGRAMIMIT
+          <span className="cover-title-line">PROGRAMMING LANGUAGES</span>
+        </h1>
         <p className="cover-subtitle">
           Një udhëzues për 15 gjuhët më të njohura të programimit
         </p>
@@ -43,9 +49,7 @@ function CoverPage({ onStart }) {
 
 function Endpaper() {
   return (
-    <div className="endpaper">
-      <div className="endpaper-pattern" />
-    </div>
+    <div className="endpaper" />
   )
 }
 
@@ -152,14 +156,14 @@ function renderRightHalf(spreadIndex, onStart) {
 }
 
 function renderPageNumber(spreadIndex, side) {
-  if (spreadIndex === 0) return null
+  if (spreadIndex <= 0) return null
   const num = spreadIndex <= 1
     ? (side === 'left' ? 'ii' : 'iii')
     : String((spreadIndex - 2) * 2 + (side === 'left' ? 1 : 2))
   return <span className={`page-number ${side}`}>{num}</span>
 }
 
-/* ====== BOOK CONTENT (the actual spread) ====== */
+/* ====== BOOK CONTENT ====== */
 
 function BookContent({ spreadIndex, showLeft, showRight, flipping, onStart }) {
   return (
@@ -180,8 +184,6 @@ function BookContent({ spreadIndex, showLeft, showRight, flipping, onStart }) {
   )
 }
 
-/* ====== FLIP PAGE CONTENT (used inside flipping page) ====== */
-
 function FlipContent({ spreadIndex, side, onStart }) {
   return (
     <div className="flip-content">
@@ -195,7 +197,9 @@ function FlipContent({ spreadIndex, side, onStart }) {
 export default function Book() {
   const [spread, setSpread] = useState(0)
   const [animState, setAnimState] = useState('idle')
+  const [showHint, setShowHint] = useState(true)
   const animRef = useRef(null)
+  const hintRef = useRef(null)
 
   const handleNext = useCallback(() => {
     if (animState !== 'idle' || spread >= TOTAL_SPREADS - 1) return
@@ -203,7 +207,7 @@ export default function Book() {
     animRef.current = setTimeout(() => {
       setSpread(s => s + 1)
       setAnimState('idle')
-    }, 1150)
+    }, 1250)
   }, [animState, spread])
 
   const handlePrev = useCallback(() => {
@@ -212,8 +216,40 @@ export default function Book() {
     animRef.current = setTimeout(() => {
       setSpread(s => s - 1)
       setAnimState('idle')
-    }, 1150)
+    }, 1250)
   }, [animState, spread])
+
+  /* Keyboard navigation */
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'ArrowRight') {
+        e.preventDefault()
+        handleNext()
+      } else if (e.key === 'ArrowLeft') {
+        e.preventDefault()
+        handlePrev()
+      }
+    }
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [handleNext, handlePrev])
+
+  /* Hide keyboard hint after first interaction */
+  useEffect(() => {
+    if (spread > 0 && showHint) {
+      const timer = setTimeout(() => setShowHint(false), 4000)
+      return () => clearTimeout(timer)
+    }
+  }, [spread, showHint])
+
+  /* Click on left/right half of the book */
+  const handleClickLeft = useCallback(() => {
+    if (spread > 0) handlePrev()
+  }, [spread, handlePrev])
+
+  const handleClickRight = useCallback(() => {
+    if (spread < TOTAL_SPREADS - 1) handleNext()
+  }, [spread, handleNext, TOTAL_SPREADS])
 
   const getLabel = () => {
     if (spread === 0) return ''
@@ -236,18 +272,15 @@ export default function Book() {
         <div className="book-shadow" />
 
         <div className="book">
-          {/* Spine */}
           <div className="book-spine" />
+          <div className="book-ribbon" />
 
-          {/* Page edges */}
           <div className="page-edges-right" />
           <div className="page-edges-bottom" />
 
-          {/* Spread area */}
           <div className="spread-area">
             <div className="gutter-shadow" />
 
-            {/* Normal state: show current spread */}
             {!isFlipping && (
               <BookContent
                 spreadIndex={spread}
@@ -258,10 +291,8 @@ export default function Book() {
               />
             )}
 
-            {/* Flipping NEXT: show target beneath, flip current right page */}
             {isFlippingNext && (
               <>
-                {/* Target spread underneath */}
                 <BookContent
                   spreadIndex={spread + 1}
                   showLeft
@@ -269,8 +300,6 @@ export default function Book() {
                   flipping={null}
                   onStart={handleNext}
                 />
-
-                {/* Current spread left page stays visible */}
                 <BookContent
                   spreadIndex={spread}
                   showLeft
@@ -278,8 +307,6 @@ export default function Book() {
                   flipping={null}
                   onStart={handleNext}
                 />
-
-                {/* Flipping page overlay */}
                 <div className="flipping-page next active">
                   <div className="flip-front">
                     <FlipContent spreadIndex={spread} side="right" onStart={handleNext} />
@@ -287,7 +314,7 @@ export default function Book() {
                   </div>
                   <div className="flip-back">
                     <FlipContent spreadIndex={spread + 1} side="left" onStart={handleNext} />
-                    <span className="page-number left" style={{ left: 36 }}>
+                    <span className="page-number left" style={{ left: 40 }}>
                       {spread + 1 <= 1 ? 'ii' : String((spread - 1) * 2 + 1)}
                     </span>
                   </div>
@@ -295,10 +322,8 @@ export default function Book() {
               </>
             )}
 
-            {/* Flipping PREV: show target beneath, flip current left page */}
             {isFlippingPrev && (
               <>
-                {/* Target spread underneath */}
                 <BookContent
                   spreadIndex={spread - 1}
                   showLeft
@@ -306,8 +331,6 @@ export default function Book() {
                   flipping={null}
                   onStart={handleNext}
                 />
-
-                {/* Current spread right page stays visible */}
                 <BookContent
                   spreadIndex={spread}
                   showLeft={false}
@@ -315,8 +338,6 @@ export default function Book() {
                   flipping={null}
                   onStart={handleNext}
                 />
-
-                {/* Flipping page overlay */}
                 <div className="flipping-page prev active">
                   <div className="flip-front">
                     <FlipContent spreadIndex={spread} side="left" onStart={handleNext} />
@@ -324,21 +345,28 @@ export default function Book() {
                   </div>
                   <div className="flip-back">
                     <FlipContent spreadIndex={spread - 1} side="right" onStart={handleNext} />
-                    <span className="page-number right" style={{ right: 36 }}>
+                    <span className="page-number right" style={{ right: 40 }}>
                       {spread - 1 <= 1 ? 'i' : String((spread - 3) * 2 + 2)}
                     </span>
                   </div>
                 </div>
               </>
             )}
+
+            {/* Click zones on book pages */}
+            {!isFlipping && spread > 0 && (
+              <div className="click-left" onClick={handleClickLeft} />
+            )}
+            {!isFlipping && spread < TOTAL_SPREADS - 1 && (
+              <div className="click-right" onClick={handleClickRight} />
+            )}
           </div>
 
-          {/* Navigation buttons */}
           {spread > 0 && (
             <button
               className="nav-btn nav-prev"
               onClick={handlePrev}
-              disabled={isFlipping || spread <= 0}
+              disabled={isFlipping}
               aria-label="Previous"
             >
               &#8249;
@@ -348,7 +376,7 @@ export default function Book() {
             <button
               className="nav-btn nav-next"
               onClick={handleNext}
-              disabled={isFlipping || spread >= TOTAL_SPREADS - 1}
+              disabled={isFlipping}
               aria-label="Next"
             >
               &#8250;
@@ -367,6 +395,13 @@ export default function Book() {
           </div>
         </>
       )}
+
+      <div className={`keyboard-hint ${!showHint || spread === 0 ? 'hidden' : ''}`}>
+        <kbd>&larr;</kbd>
+        <span> ose kliko majtas &nbsp;&middot;&nbsp; </span>
+        <kbd>&rarr;</kbd>
+        <span> ose kliko djathtas</span>
+      </div>
     </div>
   )
 }
