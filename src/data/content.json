@@ -5,7 +5,7 @@
       "paragraphs": [
         "Gjuhët e programimit janë mjetet përmes të cilave njerëzit komunikojnë me kompjuterët. Ashtu siç ne përdorim gjuhët natyrore si shqipen apo anglishten për të komunikuar me njëri-tjetrin, gjuhët e programimit na lejojnë t'i japim kompjuterit udhëzime të sakta për të kryer detyra specifike. Çdo gjuhë programimi ka sintaksën, rregullat dhe filozofinë e vet, duke e bërë atë të përshtatshme për lloje të caktuara detyrash.",
         "Gjuhët e programimit ndahen në disa kategori kryesore sipas funksionit të tyre. Gjuhët Frontend përdoren për të ndërtuar ndërfaqet vizuale që përdoruesit shohin dhe me të cilat ndërveprojnë në shfletuesit e tyre. Gjuhët Backend punojnë në server dhe merren me logjikën e biznesit, bazat e të dhënave, autentifikimin dhe API-t. Gjuhët Full Stack i referohen atyre gjuhëve që përdoren si në frontend ashtu dhe në backend, duke u dhënë zhvilluesve mundësinë të ndërtojnë aplikacione të plota me një gjuhë të vetme.",
-        "Ky libër do t'ju prezantojë me 15 gjuhët më të njohura të programimit në botë, të renditura sipas popullaritetit dhe përdorimit aktual. Për secilën gjuhë do të gjeni një përshkrim të detajuar, fushat kryesore të përdorimit, një shembull praktik kodi dhe një fakt interesant që do t'ju ndihmojë ta kuptoni dhe ta mbani mend më lehtë. Pavarësisht nëse jeni fillestar apo zhvillues me përvojë, ky libër do t'ju ofrojë një pasqyrë të vlefshme të botës së programimit."
+        "Ky libër do t'ju prezantojë me 15 gjuhët më të njohura të programimit në botë, të renditura sipas popullaritetit dhe përdorimit aktual. Për secilën gjuhë do të gjeni një përshkrim të detajuar, fushat kryesore të përdorimit, një shembull praktik kodi dhe një fakt interesant që do t'ju ndihmojë ta kuptoni dhe ta mbani mend më lehtë. Pas çdo gjuhe do të gjeni edhe një pyetje kuizi për të testuar njohuritë tuaja. Pavarësisht nëse jeni fillestar apo zhvillues me përvojë, ky libër do t'ju ofrojë një pasqyrë të vlefshme të botës së programimit."
       ]
     },
     "en": {
@@ -13,7 +13,7 @@
       "paragraphs": [
         "Programming languages are the tools through which humans communicate with computers. Just as we use natural languages like English or Albanian to communicate with each other, programming languages allow us to give computers precise instructions to perform specific tasks. Each programming language has its own syntax, rules, and philosophy, making it suitable for certain types of tasks.",
         "Programming languages are divided into several main categories based on their function. Frontend languages are used to build the visual interfaces that users see and interact with in their browsers. Backend languages work on the server and handle business logic, databases, authentication, and APIs. Full Stack languages refer to those used for both frontend and backend, giving developers the ability to build complete applications with a single language.",
-        "This book will introduce you to the 15 most popular programming languages in the world, ranked by current popularity and usage. For each language you will find a detailed description, main areas of use, a practical code example, and an interesting fact that will help you understand and remember it more easily. Whether you are a beginner or an experienced developer, this book will provide you with a valuable overview of the programming world."
+        "This book will introduce you to the 15 most popular programming languages in the world, ranked by current popularity and usage. For each language you will find a detailed description, main areas of use, a practical code example, and interesting facts. After each language you will also find a quiz question to test your knowledge. Whether you are a beginner or an experienced developer, this book will provide you with a valuable overview of the programming world."
       ]
     }
   },
@@ -23,17 +23,81 @@
       "name": "Python",
       "category": "Backend",
       "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-      "sq": {
-        "description": "Python është një nga gjuhët më të dashura dhe më të përdorura në botë, e njohur për sintaksën e saj të pastër dhe të lexueshme që i ngjan gjuhës angleze të zakonshme. Krijuar nga Guido van Rossum në vitin 1991, Python ka evoluar në një gjuhë të fuqishme që përdoret në fusha të ndryshme: nga zhvillimi i web-it deri te inteligjenca artificiale dhe shkenca e të dhënave. Ajo është gjuha e parë më e mësuar në universitete dhe platforma online për shkak të thjeshtësisë dhe fuqisë së saj.",
-        "usage": "Web (Django, Flask), Data Science, Machine Learning, AI, Automatizim, Scripting",
-        "example": "print('Hello, World!')\n\nname = input('Emri juaj: ')\nprint(f'Mirë se vini, {name}!')\n\n# Shembull i thjeshtë\nnumrat = [1, 2, 3, 4, 5]\nshuma = sum(numrat)\nprint(f'Shuma e numrave eshte: {shuma}')",
-        "funFact": "Python nuk u emërua pas gjarprit, por pas grupit komik britanik 'Monty Python's Flying Circus'. Guido van Rossum ishte duke lexuar skenaret e tyre kur krijoi gjuhën."
+      "page1": {
+        "sq": {
+          "title": "Python - Historia dhe Filozofia",
+          "paragraphs": [
+            "Python u krijua nga Guido van Rossum në dhjetor të vitit 1989, gjatë një periudhe pushimesh të Krishtlindjeve. Van Rossum po kërkonte një projekt hobi për të kaluar kohën dhe vendosi të shkruante një interpretues për një gjuhë të re programimi që po mendonte. Ajo që filloi si një eksperiment i thjeshtë u shndërrua në një nga gjuhët më të njohura dhe më të fuqishme në botë. Filozofia e Python-it përmblidhet në thënien e famshme të Van Rossum: \"Kodi lexohet më shpesh sesa shkruhet, prandaj bëjeni të lexueshëm.\"",
+            "Python është projektuar për të qenë i thjeshtë dhe intuitiv. Sintaksa e tij e pastër dhe e lexueshme e bën atë gjuhën ideale për fillestarët, por fuqia dhe fleksibiliteti i tij e bëjnë po aq tërheqës për zhvilluesit profesionistë. Python ka një nga ekosistemet më të pasura të bibliotekave në botë, duke përfshirë NumPy dhe Pandas për shkencën e të dhënave, TensorFlow dhe PyTorch për inteligjencë artificiale, Django dhe Flask për web, dhe shumë të tjera. Komuniteti i Python-it është i njohur për përfshirjen dhe mbështetjen e tij, duke e bërë të lehtë gjetjen e ndihmës dhe burimeve."
+          ],
+          "features": [
+            "Sintaksë e pastër dhe e lexueshme që i ngjan anglishtes së shkruar",
+            "Gjuhë e interpretuar me tipim dinamik dhe garbage collection automatik",
+            "Shumëparadigmë: mbështet programimin procedural, orientuar në objekte dhe funksional",
+            "Ekosistem i jashtëzakonshëm bibliotekash për çdo fushë",
+            "Cross-platform: funksionon në Windows, macOS, Linux dhe pajisje mobile"
+          ],
+          "usage": "Web (Django, Flask), Data Science, Machine Learning, AI, Automatizim, Scripting, Desktop (PyQt, Tkinter), IoT"
+        },
+        "en": {
+          "title": "Python - History and Philosophy",
+          "paragraphs": [
+            "Python was created by Guido van Rossum in December 1989, during a Christmas holiday period. Van Rossum was looking for a hobby project to pass the time and decided to write an interpreter for a new programming language he was thinking about. What started as a simple experiment turned into one of the most popular and powerful languages in the world. Python's philosophy is summed up in van Rossum's famous saying: \"Code is read more often than it is written, so make it readable.\"",
+            "Python is designed to be simple and intuitive. Its clean and readable syntax makes it the ideal language for beginners, but its power and flexibility make it equally attractive for professional developers. Python has one of the richest library ecosystems in the world, including NumPy and Pandas for data science, TensorFlow and PyTorch for AI, Django and Flask for web, and many more. The Python community is known for its inclusivity and support, making it easy to find help and resources."
+          ],
+          "features": [
+            "Clean and readable syntax resembling written English",
+            "Interpreted language with dynamic typing and automatic garbage collection",
+            "Multi-paradigm: supports procedural, object-oriented and functional programming",
+            "Exceptional library ecosystem for every field",
+            "Cross-platform: runs on Windows, macOS, Linux, and mobile devices"
+          ],
+          "usage": "Web (Django, Flask), Data Science, Machine Learning, AI, Automation, Scripting, Desktop (PyQt, Tkinter), IoT"
+        }
       },
-      "en": {
-        "description": "Python is one of the most loved and widely used languages in the world, known for its clean and readable syntax that resembles plain English. Created by Guido van Rossum in 1991, Python has evolved into a powerful language used across diverse fields: from web development to artificial intelligence and data science. It is the most taught first language in universities and online platforms because of its simplicity and power.",
-        "usage": "Web (Django, Flask), Data Science, Machine Learning, AI, Automation, Scripting",
-        "example": "print('Hello, World!')\n\nname = input('Your name: ')\nprint(f'Welcome, {name}!')\n\n# Simple example\nnumbers = [1, 2, 3, 4, 5]\ntotal = sum(numbers)\nprint(f'The sum is: {total}')",
-        "funFact": "Python was not named after the snake, but after the British comedy group 'Monty Python's Flying Circus'. Guido van Rossum was reading their scripts when he created the language."
+      "page2": {
+        "sq": {
+          "title": "Python - Kuriozitete dhe Detaje Teknike",
+          "funFacts": [
+            "Python nuk u emërua pas gjarprit, por pas grupit komik britanik \"Monty Python's Flying Circus\". Guido van Rossum ishte duke lexuar skenaret e tyre kur krijoi gjuhën dhe donte një emër që ishte pak i çuditshëm dhe jo tradicional.",
+            "Koncepti \"Pythonic\" përdoret për të përshkruar kod që ndjek filozofinë e Python-it: të pastër, të lexueshëm dhe elegant. Kodi Pythonic shpesh duket si pseudo-kod, aq i pastër dhe i strukturuar është."
+          ],
+          "companies": "Google, Netflix, Spotify, Instagram, Dropbox, Reddit, YouTube, NASA, Pinterest, Uber",
+          "pros": [
+            "Sintaksë e pastër dhe shumë e lehtë për t'u mësuar krahasuar me gjuhët e tjera",
+            "Bibliotekë standarde tepër e pasur me module për çdo nevojë",
+            "Përdoret në fushat më të avancuara të teknologjisë: AI, Data Science, Web",
+            "Komunitet i madh global me miliona zhvillues"
+          ],
+          "cons": [
+            "Më e ngadaltë se gjuhët e kompiluara si C++ ose Java",
+            "Konsum i lartë i memories për shkak të garbage collector-it",
+            "Dynamic typing mund të çojë në gabime runtime që nuk kapen gjatë kompilimit",
+            "Performance e dobët për aplikacione mobile native"
+          ],
+          "example": "# Shembull Python\nprint(\"Hello, World!\")\n\n# Funksion i thjeshtë\ndef factorial(n):\n    if n <= 1:\n        return 1\n    return n * factorial(n - 1)\n\nprint(f\"Faktoriali i 5 eshte: {factorial(5)}\")\n\n# List comprehension\nnumrat = [x**2 for x in range(10)]\nprint(f\"Katroret: {numrat}\")"
+        },
+        "en": {
+          "title": "Python - Trivia and Technical Details",
+          "funFacts": [
+            "Python was not named after the snake, but after the British comedy group \"Monty Python's Flying Circus\". Guido van Rossum was reading their scripts when he created the language and wanted a name that was slightly odd and non-traditional.",
+            "The concept \"Pythonic\" is used to describe code that follows Python's philosophy: clean, readable, and elegant. Pythonic code often looks like pseudocode, so clean and well-structured it is."
+          ],
+          "companies": "Google, Netflix, Spotify, Instagram, Dropbox, Reddit, YouTube, NASA, Pinterest, Uber",
+          "pros": [
+            "Clean syntax that is very easy to learn compared to other languages",
+            "Extremely rich standard library with modules for every need",
+            "Used in the most advanced technology fields: AI, Data Science, Web",
+            "Large global community with millions of developers"
+          ],
+          "cons": [
+            "Slower than compiled languages like C++ or Java",
+            "High memory consumption due to garbage collector",
+            "Dynamic typing can lead to runtime errors not caught during compilation",
+            "Poor performance for native mobile applications"
+          ],
+          "example": "# Python example\nprint(\"Hello, World!\")\n\n# Simple function\ndef factorial(n):\n    if n <= 1:\n        return 1\n    return n * factorial(n - 1)\n\nprint(f\"Factorial of 5 is: {factorial(5)}\")\n\n# List comprehension\nnumbers = [x**2 for x in range(10)]\nprint(f\"Squares: {numbers}\")"
+        }
       }
     },
     {
@@ -41,17 +105,81 @@
       "name": "JavaScript",
       "category": "Frontend",
       "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-      "sq": {
-        "description": "JavaScript është gjuha që fuqizon web-in modern. Ajo është kudo: në çdo faqe web që vizitoni, në çdo aplikacion që përdorni në shfletues. JavaScript i bën faqet web të jenë interaktive dhe dinamike, duke reaguar ndaj veprimeve të përdoruesit. Me ardhjen e Node.js, JavaScript ka kapërcyer kufijtë e shfletuesit dhe tani përdoret edhe në server, duke u bërë një nga gjuhët më të gjithanshme dhe më të kërkuara në treg.",
-        "usage": "Web Frontend (React, Vue, Angular), Web Backend (Node.js), Mobile (React Native), Desktop (Electron)",
-        "example": "console.log('Hello, World!');\n\nconst name = prompt('Emri juaj:');\nalert('Mirë se vini, ' + name + '!');\n\n// Funksion i thjeshtë\nfunction mbledh(a, b) {\n  return a + b;\n}\nconsole.log('Shuma: ' + mbledh(5, 3));",
-        "funFact": "JavaScript u krijua nga Brendan Eich në vetëm 10 ditë në vitin 1995. Fillimisht quhej 'Mocha', pastaj 'LiveScript', dhe më në fund 'JavaScript' për qëllime marketingu."
+      "page1": {
+        "sq": {
+          "title": "JavaScript - Gjuha e Web-it",
+          "paragraphs": [
+            "JavaScript u krijua nga Brendan Eich në vitin 1995, në vetëm 10 ditë, kur ai punonte për Netscape. Ajo që filloi si një gjuhë e thjeshtë për të shtuar ndërveprim në faqet web u shndërrua në gjuhën më të përdorur në botë. Sot, JavaScript është kudo: në çdo faqe web që vizitoni, në çdo aplikacion modern, dhe madje edhe në server me Node.js. Është një nga tre teknologjitë kryesore të web-it, së bashku me HTML dhe CSS.",
+            "JavaScript ka evoluar jashtëzakonisht shumë që nga fillimet e tij modeste. Standardet ECMAScript kanë sjellë veçori moderne si klasa, module, arrow functions, promises dhe async/await, duke e bërë JavaScript-in një gjuhë serioze dhe të fuqishme. Me framework-e si React, Vue dhe Angular për frontend, dhe Node.js për backend, JavaScript është ndoshta gjuha më e gjithanshme që ekziston sot. Ajo përdoret gjithashtu për aplikacione mobile (React Native), desktop (Electron), dhe madje edhe IoT."
+          ],
+          "features": [
+            "Gjuhë e interpretuar që ekzekutohet në çdo shfletues modern pa pasur nevojë për kompilim",
+            "Event-driven dhe asinkrone: ideale për aplikacione që presin input nga përdoruesi",
+            "Prototype-based inheritance: një model unik i trashëgimisë",
+            "Ekosistem i madh packagesh përmes npm (mbi 2 milion paketa)",
+            "Funksionon në browser, server, mobile dhe desktop"
+          ],
+          "usage": "Web Frontend (React, Vue, Angular), Web Backend (Node.js), Mobile (React Native), Desktop (Electron), IoT"
+        },
+        "en": {
+          "title": "JavaScript - The Language of the Web",
+          "paragraphs": [
+            "JavaScript was created by Brendan Eich in 1995, in just 10 days, while working for Netscape. What started as a simple language to add interactivity to web pages turned into the most widely used language in the world. Today, JavaScript is everywhere: in every web page you visit, in every modern application, and even on the server with Node.js. It is one of the three core technologies of the web, alongside HTML and CSS.",
+            "JavaScript has evolved tremendously since its humble beginnings. ECMAScript standards have brought modern features like classes, modules, arrow functions, promises, and async/await, making JavaScript a serious and powerful language. With frameworks like React, Vue, and Angular for frontend, and Node.js for backend, JavaScript is arguably the most versatile language in existence today. It is also used for mobile applications (React Native), desktop (Electron), and even IoT."
+          ],
+          "features": [
+            "Interpreted language that runs in every modern browser without compilation",
+            "Event-driven and asynchronous: ideal for user-input driven applications",
+            "Prototype-based inheritance: a unique inheritance model",
+            "Huge package ecosystem via npm (over 2 million packages)",
+            "Runs on browser, server, mobile, and desktop"
+          ],
+          "usage": "Web Frontend (React, Vue, Angular), Web Backend (Node.js), Mobile (React Native), Desktop (Electron), IoT"
+        }
       },
-      "en": {
-        "description": "JavaScript is the language that powers the modern web. It is everywhere: in every web page you visit, in every application you use in your browser. JavaScript makes web pages interactive and dynamic, responding to user actions. With the arrival of Node.js, JavaScript has transcended the browser and is now used on the server as well, making it one of the most versatile and in-demand languages in the market.",
-        "usage": "Web Frontend (React, Vue, Angular), Web Backend (Node.js), Mobile (React Native), Desktop (Electron)",
-        "example": "console.log('Hello, World!');\n\nconst name = prompt('Your name:');\nalert('Welcome, ' + name + '!');\n\n// Simple function\nfunction add(a, b) {\n  return a + b;\n}\nconsole.log('Sum: ' + add(5, 3));",
-        "funFact": "JavaScript was created by Brendan Eich in just 10 days in 1995. It was originally called 'Mocha', then 'LiveScript', and finally 'JavaScript' for marketing purposes."
+      "page2": {
+        "sq": {
+          "title": "JavaScript - Kuriozitete dhe Detaje Teknike",
+          "funFacts": [
+            "JavaScript fillimisht quhej 'Mocha', pastaj 'LiveScript', dhe më në fund 'JavaScript' për qëllime marketingu, për të përfituar nga popullariteti i Java-s në atë kohë. Megjithatë, JavaScript dhe Java nuk kanë pothuajse asgjë të përbashkët përveç emrit dhe sintaksës së ngjashme sipërfaqësore.",
+            "npm (Node Package Manager) është regjistri më i madh i paketave softuerike në botë, me mbi 2 milion paketa. Çdo ditë shkarkohen mbi 1 miliard paketa npm. Megjithatë, shumica e këtyre paketave janë varësi të varësive - një projekt mesatar npm ka qindra varësi indirekte."
+          ],
+          "companies": "Facebook/Meta, Google, Microsoft, Netflix, PayPal, Walmart, LinkedIn, eBay, Uber, Airbnb",
+          "pros": [
+            "Punon në çdo pajisje me shfletues pa pasur nevojë për instalim shtesë",
+            "Gjuhë shumë fleksibile me shumë paradigmë programimi",
+            "Komunitet jashtëzakonisht i madh dhe burime të panumërta mësimi",
+            "npm ofon qasje në miliona biblioteka të gatshme"
+          ],
+          "cons": [
+            "Tipimi i dobët dinamik mund të shkaktojë gabime të vështira për t'u gjetur",
+            "Sjellje e paparashikueshme në disa raste (si krahasimi == vs ===)",
+            "Single-threaded (megjithëse mbështet asinkronitetin)",
+            "Fragmantim i madh i framework-eve dhe mjeteve"
+          ],
+          "example": "// Shembull JavaScript\nconsole.log(\"Hello, World!\");\n\n// Funksion i thjeshtë\nfunction factorial(n) {\n    if (n <= 1) return 1;\n    return n * factorial(n - 1);\n}\n\nconsole.log(`Faktoriali i 5 eshte: ${factorial(5)}`);\n\n// Arrow function dhe array methods\nconst numrat = [1, 2, 3, 4, 5];\nconst katror = numrat.map(x => x ** 2);\nconsole.log(`Katroret: ${katror}`);"
+        },
+        "en": {
+          "title": "JavaScript - Trivia and Technical Details",
+          "funFacts": [
+            "JavaScript was originally called 'Mocha', then 'LiveScript', and finally 'JavaScript' for marketing purposes, to capitalize on Java's popularity at the time. However, JavaScript and Java have almost nothing in common except the name and superficially similar syntax.",
+            "npm (Node Package Manager) is the largest software package registry in the world, with over 2 million packages. Over 1 billion npm packages are downloaded every day. However, most of these packages are dependencies of dependencies - an average npm project has hundreds of indirect dependencies."
+          ],
+          "companies": "Facebook/Meta, Google, Microsoft, Netflix, PayPal, Walmart, LinkedIn, eBay, Uber, Airbnb",
+          "pros": [
+            "Works on any device with a browser without additional installation",
+            "Very flexible multi-paradigm language",
+            "Extremely large community and countless learning resources",
+            "npm provides access to millions of ready-made libraries"
+          ],
+          "cons": [
+            "Weak dynamic typing can cause hard-to-find errors",
+            "Unpredictable behavior in some cases (like == vs === comparison)",
+            "Single-threaded (though it supports asynchronicity)",
+            "Large fragmentation of frameworks and tools"
+          ],
+          "example": "// JavaScript example\nconsole.log(\"Hello, World!\");\n\n// Simple function\nfunction factorial(n) {\n    if (n <= 1) return 1;\n    return n * factorial(n - 1);\n}\n\nconsole.log(`Factorial of 5 is: ${factorial(5)}`);\n\n// Arrow function and array methods\nconst numbers = [1, 2, 3, 4, 5];\nconst squares = numbers.map(x => x ** 2);\nconsole.log(`Squares: ${squares}`);"
+        }
       }
     },
     {
@@ -59,17 +187,81 @@
       "name": "Java",
       "category": "Backend",
       "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
-      "sq": {
-        "description": "Java është një nga gjuhët më të qëndrueshme dhe të përdorura në botën e programimit. Krijuar nga Sun Microsystems në vitin 1995, Java ndjek parimin 'write once, run anywhere', që do të thotë se kodi i shkruar në Java mund të ekzekutohet në çdo pajisje që ka një Java Virtual Machine. Kjo e bën Java-n ideale për aplikacione të mëdha enterprise, sisteme bankare, Android dhe infrastruktura kritike ku stabiliteti dhe siguria janë thelbësore.",
-        "usage": "Enterprise Software, Android, Web Backend (Spring), Big Data, Cloud",
-        "example": "public class Hello {\n  public static void main(String[] args) {\n    System.out.println(\"Hello, World!\");\n    \n    String name = \"Ardian\";\n    System.out.println(\"Welcome, \" + name + \"!\");\n  }\n}",
-        "funFact": "Java fillimisht quhej 'Oak' sipas një peme që rritej para zyrës së James Gosling. Më vonë u riemërua Java pas një lloji kafeje indoneziane."
+      "page1": {
+        "sq": {
+          "title": "Java - Qëndrueshmëri dhe Shkallëzim",
+          "paragraphs": [
+            "Java u krijua nga James Gosling dhe ekipi i tij në Sun Microsystems në fillim të viteve 1990. Projekti fillestar quhej 'Oak' dhe ishte projektuar për televizorë interaktivë, por teknologjia ishte përpara kohës së saj. Në vitin 1995, Sun ndryshoi fokusin dhe publikoi Java-n për web-in me parimin e famshëm 'Write Once, Run Anywhere' (Shkruaj një herë, ekzekuto kudo). Ky parim u bë realitet përmes Java Virtual Machine (JVM), një shtresë abstraksioni që lejon kodin Java të ekzekutohet në çdo platformë.",
+            "Java është një nga gjuhët më të përdorura në botën e korporatave. Ajo është shtylla kurrizore e sistemeve bankare, platformave të tregtisë elektronike, aplikacioneve Android dhe infrastrukturës së madhe cloud. Çdo vit shkruhen miliarda rreshta kod Java. Stabiliteti, siguria dhe performanca e Java-s e bëjnë atë zgjedhjen kryesore për sistemet kritike ku një gabim mund të kushtojë miliona. Për më tepër, ekosistemi i pasur i Java-s përfshin framework-e si Spring, Hibernate dhe Apache, që lehtësojnë zhvillimin e aplikacioneve komplekse."
+          ],
+          "features": [
+            "Platformë e pavarur përmes JVM (Java Virtual Machine)",
+            "E orientuar fort në objekte me garbage collection automatik",
+            "Statically typed me kontroll të rreptë të tipeve në kohë kompilimi",
+            "Multi-threading dhe konkurencë e integruar",
+            "Siguri e lartë përmes sandbox dhe menaxhimit të qasjes"
+          ],
+          "usage": "Enterprise, Android, Web Backend (Spring), Big Data (Hadoop, Spark), Cloud, Banking"
+        },
+        "en": {
+          "title": "Java - Stability and Scalability",
+          "paragraphs": [
+            "Java was created by James Gosling and his team at Sun Microsystems in the early 1990s. The initial project was called 'Oak' and was designed for interactive televisions, but the technology was ahead of its time. In 1995, Sun changed focus and released Java for the web with the famous principle 'Write Once, Run Anywhere'. This principle became reality through the Java Virtual Machine (JVM), an abstraction layer that allows Java code to run on any platform.",
+            "Java is one of the most widely used languages in the corporate world. It is the backbone of banking systems, e-commerce platforms, Android applications, and large cloud infrastructure. Billions of lines of Java code are written every year. Java's stability, security, and performance make it the primary choice for critical systems where one mistake can cost millions. Moreover, Java's rich ecosystem includes frameworks like Spring, Hibernate, and Apache, which facilitate the development of complex applications."
+          ],
+          "features": [
+            "Platform independent through JVM (Java Virtual Machine)",
+            "Strongly object-oriented with automatic garbage collection",
+            "Statically typed with strict type checking at compile time",
+            "Built-in multi-threading and concurrency",
+            "High security through sandbox and access management"
+          ],
+          "usage": "Enterprise, Android, Web Backend (Spring), Big Data (Hadoop, Spark), Cloud, Banking"
+        }
       },
-      "en": {
-        "description": "Java is one of the most stable and widely used languages in the programming world. Created by Sun Microsystems in 1995, Java follows the principle 'write once, run anywhere', meaning that Java code can run on any device that has a Java Virtual Machine. This makes Java ideal for large enterprise applications, banking systems, Android, and critical infrastructure where stability and security are paramount.",
-        "usage": "Enterprise Software, Android, Web Backend (Spring), Big Data, Cloud",
-        "example": "public class Hello {\n  public static void main(String[] args) {\n    System.out.println(\"Hello, World!\");\n    \n    String name = \"John\";\n    System.out.println(\"Welcome, \" + name + \"!\");\n  }\n}",
-        "funFact": "Java was originally called 'Oak' after a tree that grew outside James Gosling's office. It was later renamed Java after a type of Indonesian coffee."
+      "page2": {
+        "sq": {
+          "title": "Java - Kuriozitete dhe Detaje Teknike",
+          "funFacts": [
+            "Java fillimisht quhej 'Oak' sipas një peme që rritej para zyrës së James Gosling. Kur ekipi zbuloi se ekzistonte tashmë një gjuhë me emrin Oak, ata organizuan një seancë brainstorming dhe emri Java u zgjodh nga një listë e gjatë sugjerimesh, duke përfshirë 'Silk', 'DNA', dhe 'Ruby'.",
+            "Java ka një nga komunitetet më të mëdha të zhvilluesve në botë, me mbi 12 milionë zhvillues. Çdo vit mbahet JavaOne, një nga konferencat më të mëdha të programimit në botë. Java është gjuha zyrtare për zhvillimin e aplikacioneve Android që nga viti 2008."
+          ],
+          "companies": "Google, Amazon, Netflix, Twitter/X, LinkedIn, eBay, Alibaba, Goldman Sachs, Uber, Airbnb",
+          "pros": [
+            "Performancë e lartë dhe e qëndrueshme falë JIT compilation në JVM",
+            "Ekosistem i pjekur me dekada zhvillim dhe mijëra biblioteka",
+            "Mbështetje e shkëlqyer për aplikacione multi-threading",
+            "Backward compatibility: kod i shkruar 20 vjet më parë ende funksionon"
+          ],
+          "cons": [
+            "Sintaksë verbose që kërkon më shumë kod për të njëjtën funksionalitet",
+            "Konsum i lartë i memories në krahasim me C/C++",
+            "Kohë e ngadaltë fillestare e nisjes për shkak të JVM-së",
+            "Boilerplate code i tepërt në aplikacionet enterprise"
+          ],
+          "example": "// Shembull Java\npublic class Hello {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n        \n        // Faktorial\n        int n = 5;\n        int result = 1;\n        for (int i = 1; i <= n; i++) {\n            result *= i;\n        }\n        System.out.println(\"Faktoriali i \" + n + \" eshte: \" + result);\n        \n        // Stream API\n        java.util.List<Integer> numrat = java.util.List.of(1,2,3,4,5);\n        numrat.stream()\n              .map(x -> x * x)\n              .forEach(x -> System.out.print(x + \" \"));\n    }\n}"
+        },
+        "en": {
+          "title": "Java - Trivia and Technical Details",
+          "funFacts": [
+            "Java was originally called 'Oak' after a tree that grew outside James Gosling's office. When the team discovered that a language named Oak already existed, they held a brainstorming session and the name Java was chosen from a long list of suggestions, including 'Silk', 'DNA', and 'Ruby'.",
+            "Java has one of the largest developer communities in the world, with over 12 million developers. JavaOne, one of the largest programming conferences, is held annually. Java has been the official language for Android application development since 2008."
+          ],
+          "companies": "Google, Amazon, Netflix, Twitter/X, LinkedIn, eBay, Alibaba, Goldman Sachs, Uber, Airbnb",
+          "pros": [
+            "High and stable performance thanks to JIT compilation in JVM",
+            "Mature ecosystem with decades of development and thousands of libraries",
+            "Excellent support for multi-threading applications",
+            "Backward compatibility: code written 20 years ago still works"
+          ],
+          "cons": [
+            "Verbose syntax requiring more code for the same functionality",
+            "High memory consumption compared to C/C++",
+            "Slow initial startup time due to JVM",
+            "Excessive boilerplate code in enterprise applications"
+          ],
+          "example": "// Java example\npublic class Hello {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n        \n        // Factorial\n        int n = 5;\n        int result = 1;\n        for (int i = 1; i <= n; i++) {\n            result *= i;\n        }\n        System.out.println(\"Factorial of \" + n + \" is: \" + result);\n        \n        // Stream API\n        java.util.List<Integer> numbers = java.util.List.of(1,2,3,4,5);\n        numbers.stream()\n              .map(x -> x * x)\n              .forEach(x -> System.out.print(x + \" \"));\n    }\n}"
+        }
       }
     },
     {
@@ -77,17 +269,81 @@
       "name": "C++",
       "category": "Backend",
       "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
-      "sq": {
-        "description": "C++ është një gjuhë programimi e fuqishme që ju jep programuesve kontroll të plotë mbi harduerin, duke kombinuar programimin e nivelit të lartë me atë të nivelit të ulët. E krijuar nga Bjarne Stroustrup në vitet 1980 si një zgjerim i gjuhës C, C++ përdoret për të ndërtuar sisteme operative, lojëra, browser-a dhe aplikacione që kërkojnë performancë maksimale. Ajo është gjuha kryesore pas motorëve të lojërave si Unreal Engine dhe sistemeve të mëdha financiare.",
-        "usage": "Lojëra (Unreal Engine), Sisteme Operative, Browser, Embedded, Aplikacione me performancë të lartë",
-        "example": "#include <iostream>\nusing namespace std;\n\nint main() {\n  cout << \"Hello, World!\" << endl;\n  \n  int a = 10, b = 5;\n  cout << \"Shuma: \" << a + b << endl;\n  return 0;\n}",
-        "funFact": "C++ fillimisht quhej 'C with Classes' (C me Klasa). Stroustrup e krijoi atë për të shtuar konceptin e programimit të orientuar në objekte në gjuhën C."
+      "page1": {
+        "sq": {
+          "title": "C++ - Fuqia dhe Kontrolli",
+          "paragraphs": [
+            "C++ u krijua nga Bjarne Stroustrup në Bell Labs në vitin 1983 si një zgjerim i gjuhës C. Stroustrup donte të shtonte konceptet e programimit të orientuar në objekte në C, pa sakrifikuar fuqinë dhe performancën që e bënin C-në kaq të popullarizuar. Fillimisht e quajtur 'C with Classes' (C me Klasa), gjuha më vonë u riemërua C++, ku ++ është operatori i rritjes në C, duke treguar se është një hap përpara nga C.",
+            "C++ është gjuha e zgjedhjes për aplikacionet që kërkojnë performancë maksimale dhe kontroll të plotë mbi harduerin. Ajo përdoret për të ndërtuar sisteme operative (Windows, Linux, macOS janë shkruar pjesërisht në C/C++), motorë lojërash (Unreal Engine), shfletues web (Chrome, Firefox), aplikacione financiare dhe sisteme embedded. C++ ofron një kombinim unik të programimit të nivelit të lartë dhe të ulët, duke i dhënë programuesit kontroll mbi memorien dhe burimet e sistemit."
+          ],
+          "features": [
+            "Kontroll i plotë mbi memorien përmes pointer-ave dhe alokimit manual",
+            "Performancë maksimale afër gjuhëve assembly",
+            "Multi-paradigmë: procedural, OOP, generic, dhe funksional",
+            "RAII (Resource Acquisition Is Initialization) për menaxhim të sigurt të burimeve",
+            "Standard Library e pasur me algoritme dhe struktura të dhënash"
+          ],
+          "usage": "Loje (Unreal Engine), Sisteme Operative, Browser, Financa, Embedded, IoT, Aplikacione me performancë të lartë"
+        },
+        "en": {
+          "title": "C++ - Power and Control",
+          "paragraphs": [
+            "C++ was created by Bjarne Stroustrup at Bell Labs in 1983 as an extension of the C language. Stroustrup wanted to add object-oriented programming concepts to C without sacrificing the power and performance that made C so popular. Originally called 'C with Classes', the language was later renamed C++, where ++ is the increment operator in C, indicating it is a step forward from C.",
+            "C++ is the language of choice for applications that require maximum performance and complete control over hardware. It is used to build operating systems (Windows, Linux, macOS are partially written in C/C++), game engines (Unreal Engine), web browsers (Chrome, Firefox), financial applications, and embedded systems. C++ offers a unique combination of high-level and low-level programming, giving the programmer control over memory and system resources."
+          ],
+          "features": [
+            "Full memory control through pointers and manual allocation",
+            "Maximum performance close to assembly languages",
+            "Multi-paradigm: procedural, OOP, generic, and functional",
+            "RAII (Resource Acquisition Is Initialization) for safe resource management",
+            "Rich Standard Library with algorithms and data structures"
+          ],
+          "usage": "Games (Unreal Engine), Operating Systems, Browsers, Finance, Embedded, IoT, High-performance applications"
+        }
       },
-      "en": {
-        "description": "C++ is a powerful programming language that gives programmers complete control over hardware, combining high-level and low-level programming. Created by Bjarne Stroustrup in the 1980s as an extension of C, C++ is used to build operating systems, games, browsers, and applications that demand maximum performance. It is the primary language behind game engines like Unreal Engine and large financial systems.",
-        "usage": "Games (Unreal Engine), Operating Systems, Browsers, Embedded, High-performance applications",
-        "example": "#include <iostream>\nusing namespace std;\n\nint main() {\n  cout << \"Hello, World!\" << endl;\n  \n  int a = 10, b = 5;\n  cout << \"Sum: \" << a + b << endl;\n  return 0;\n}",
-        "funFact": "C++ was originally called 'C with Classes'. Stroustrup created it to add object-oriented programming concepts to the C language."
+      "page2": {
+        "sq": {
+          "title": "C++ - Kuriozitete dhe Detaje Teknike",
+          "funFacts": [
+            "C++ është një nga gjuhet me më shumë fjalë kyçe (keywords), me mbi 80 të tilla në standardin C++20. Kjo e bën atë një nga gjuhet më komplekse për t'u mësuar, por gjithashtu një nga më të fuqishmet.",
+            "Bjarne Stroustrup shpesh thotë se 'C++ e bën të vështirë të shtënat në këmbë, por kur e bën, të merr të gjithë këmbën'. Kjo metaforë përshkruan fuqinë dhe rrezikun e punës me menaxhim manual të memories."
+          ],
+          "companies": "Microsoft, Google, Apple, Meta, Amazon, Epic Games (Unreal Engine), Adobe, Oracle, Intel",
+          "pros": [
+            "Performanca më e mirë nga të gjitha gjuhet e nivelit të lartë",
+            "Kontroll i plotë mbi harduerin dhe memorien",
+            "Standard Library e fuqishme me STL (Standard Template Library)",
+            "Përdoret në sistemet më kritike dhe më të mëdha në botë"
+          ],
+          "cons": [
+            "Sintaksë komplekse dhe kurbë e lartë mësimi",
+            "Menaxhimi manual i memories kërkon kujdes ekstrem për të shmangur gabimet",
+            "Kohë e gjatë kompilimi për projekte të mëdha",
+            "Gabimet e memories (buffer overflow, memory leak) janë të zakonshme"
+          ],
+          "example": "// Shembull C++\n#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::cout << \"Hello, World!\" << std::endl;\n    \n    // Faktorial\n    int n = 5, result = 1;\n    for (int i = 1; i <= n; i++)\n        result *= i;\n    std::cout << \"Faktoriali i \" << n << \" eshte: \" << result << std::endl;\n    \n    // STL algorithm\n    std::vector<int> numrat = {1, 2, 3, 4, 5};\n    std::transform(numrat.begin(), numrat.end(), numrat.begin(),\n                   [](int x) { return x * x; });\n    for (int x : numrat)\n        std::cout << x << \" \";\n    return 0;\n}"
+        },
+        "en": {
+          "title": "C++ - Trivia and Technical Details",
+          "funFacts": [
+            "C++ is one of the languages with the most keywords, with over 80 in the C++20 standard. This makes it one of the most complex languages to learn, but also one of the most powerful.",
+            "Bjarne Stroustrup often says that 'C++ makes it hard to shoot yourself in the foot, but when it does, it takes off the whole leg'. This metaphor describes the power and risk of working with manual memory management."
+          ],
+          "companies": "Microsoft, Google, Apple, Meta, Amazon, Epic Games (Unreal Engine), Adobe, Oracle, Intel",
+          "pros": [
+            "Best performance among all high-level languages",
+            "Complete control over hardware and memory",
+            "Powerful Standard Library with STL (Standard Template Library)",
+            "Used in the most critical and largest systems in the world"
+          ],
+          "cons": [
+            "Complex syntax and steep learning curve",
+            "Manual memory management requires extreme care to avoid errors",
+            "Long compilation time for large projects",
+            "Memory errors (buffer overflow, memory leak) are common"
+          ],
+          "example": "// C++ example\n#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::cout << \"Hello, World!\" << std::endl;\n    \n    // Factorial\n    int n = 5, result = 1;\n    for (int i = 1; i <= n; i++)\n        result *= i;\n    std::cout << \"Factorial of \" << n << \" is: \" << result << std::endl;\n    \n    // STL algorithm\n    std::vector<int> numbers = {1, 2, 3, 4, 5};\n    std::transform(numbers.begin(), numbers.end(), numbers.begin(),\n                   [](int x) { return x * x; });\n    for (int x : numbers)\n        std::cout << x << \" \";\n    return 0;\n}"
+        }
       }
     },
     {
@@ -95,17 +351,81 @@
       "name": "C#",
       "category": "Full Stack",
       "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
-      "sq": {
-        "description": "C# (shqiptohet C-Sharp) është një gjuhë moderne e krijuar nga Microsoft në vitin 2000 si pjesë e platformës .NET. Ajo është projektuar për të qenë e thjeshtë, e fuqishme dhe e sigurt, duke kombinuar fuqinë e C++ me thjeshtësinë e Visual Basic. C# përdoret gjerësisht për të ndërtuar aplikacione web me ASP.NET, lojëra me Unity (një nga motorët më të njohur të lojërave), aplikacione desktop dhe mobile. Ajo është një zgjedhje kryesore për zhvilluesit që punojnë në ekosistemin Microsoft.",
-        "usage": "Web (ASP.NET), Lojëra (Unity), Desktop, Mobile (Xamarin), Cloud (Azure)",
-        "example": "using System;\n\nclass Hello {\n  static void Main() {\n    Console.WriteLine(\"Hello, World!\");\n    \n    Console.Write(\"Emri juaj: \");\n    string name = Console.ReadLine();\n    Console.WriteLine($\"Miresevini, {name}!\");\n  }\n}",
-        "funFact": "Emri C# u frymëzua nga nota muzikore C-Sharp (Do diesi). Microsoft donte të tregonte se gjuha ishte një 'hap më lart' se C dhe C++."
+      "page1": {
+        "sq": {
+          "title": "C# - Moderniteti dhe Produktiviteti",
+          "paragraphs": [
+            "C# (shqiptohet C-Sharp) u krijua nga Microsoft në vitin 2000 si pjesë e platformës .NET, me Anders Hejlsberg si arkitektin kryesor. Hejlsberg, i cili më parë kishte krijuar Turbo Pascal dhe Borland Delphi, solli eksperiencën e tij të gjatë në dizajnimin e C#. Gjuha u projektua për të qenë e thjeshtë, moderne, e sigurt dhe e orientuar në objekte, duke kombinuar fuqinë e C++ me produktivitetin e Visual Basic.",
+            "C# ka evoluar vazhdimisht gjatë dy dekadave të fundit. Versionet e fundit të gjuhës përfshijnë veçori si programimi funksional, pattern matching, records, dhe nullable reference types. Me .NET Core dhe .NET 5+, C# është bërë cross-platform, duke punuar në Windows, macOS dhe Linux. C# përdoret gjerësisht për web me ASP.NET Core, lojëra me Unity (motorin më të popullarizuar të lojërave indie), aplikacione desktop me WPF dhe MAUI, dhe cloud me Azure."
+          ],
+          "features": [
+            "Gjuhë e tipizuar statikisht me garbage collection dhe type safety",
+            "Cross-platform pas .NET Core (Windows, macOS, Linux)",
+            "LINQ (Language Integrated Query) për pyetje të integruara në gjuhë",
+            "Async/await i integruar për programim asinkron të pastër",
+            "Ekosistem i pasur me NuGet package manager"
+          ],
+          "usage": "Web (ASP.NET Core), Lojra (Unity), Desktop (WPF, MAUI), Mobile (Xamarin), Cloud (Azure), Enterprise"
+        },
+        "en": {
+          "title": "C# - Modernity and Productivity",
+          "paragraphs": [
+            "C# (pronounced C-Sharp) was created by Microsoft in 2000 as part of the .NET platform, with Anders Hejlsberg as the lead architect. Hejlsberg, who had previously created Turbo Pascal and Borland Delphi, brought his extensive experience to designing C#. The language was designed to be simple, modern, safe, and object-oriented, combining the power of C++ with the productivity of Visual Basic.",
+            "C# has continuously evolved over the past two decades. Recent versions of the language include features like functional programming, pattern matching, records, and nullable reference types. With .NET Core and .NET 5+, C# has become cross-platform, running on Windows, macOS, and Linux. C# is widely used for web with ASP.NET Core, games with Unity (the most popular indie game engine), desktop applications with WPF and MAUI, and cloud with Azure."
+          ],
+          "features": [
+            "Statically typed language with garbage collection and type safety",
+            "Cross-platform after .NET Core (Windows, macOS, Linux)",
+            "LINQ (Language Integrated Query) for integrated querying",
+            "Built-in async/await for clean asynchronous programming",
+            "Rich ecosystem with NuGet package manager"
+          ],
+          "usage": "Web (ASP.NET Core), Games (Unity), Desktop (WPF, MAUI), Mobile (Xamarin), Cloud (Azure), Enterprise"
+        }
       },
-      "en": {
-        "description": "C# (pronounced C-Sharp) is a modern language created by Microsoft in 2000 as part of the .NET platform. It was designed to be simple, powerful, and safe, combining the power of C++ with the simplicity of Visual Basic. C# is widely used for building web applications with ASP.NET, games with Unity (one of the most popular game engines), desktop and mobile applications. It is a top choice for developers working in the Microsoft ecosystem.",
-        "usage": "Web (ASP.NET), Games (Unity), Desktop, Mobile (Xamarin), Cloud (Azure)",
-        "example": "using System;\n\nclass Hello {\n  static void Main() {\n    Console.WriteLine(\"Hello, World!\");\n    \n    Console.Write(\"Your name: \");\n    string name = Console.ReadLine();\n    Console.WriteLine($\"Welcome, {name}!\");\n  }\n}",
-        "funFact": "The name C# was inspired by the musical note C-Sharp. Microsoft wanted to indicate that the language was a 'step above' C and C++."
+      "page2": {
+        "sq": {
+          "title": "C# - Kuriozitete dhe Detaje Teknike",
+          "funFacts": [
+            "Emri C# u frymëzua nga nota muzikore C-Sharp (Do diesi). Microsoft donte të tregonte se gjuha ishte një 'hap më lart' se C dhe C++. Në muzikë, sharp (diesi) tregon se nota është gjysmë ton më e lartë.",
+            "Anders Hejlsberg, krijuesi i C#, Turbo Pascal dhe TypeScript, është një nga programuesit më me ndikim në histori. Ai punoi në Microsoft për mbi 25 vjet dhe vazhdon të udhëheqë zhvillimin e TypeScript."
+          ],
+          "companies": "Microsoft, Unity Technologies, Stack Overflow, Accenture, Dell, Intel, Bank of America, Siemens",
+          "pros": [
+            "Produktivitet i lartë me sintaksë të pastër dhe IntelliSense të fuqishëm",
+            "Unity, motori më i popullarizuar i lojërave, përdor C# si gjuhë kryesore",
+            "ASP.NET Core është një nga framework-et më të shpejtë web",
+            "Mbështetje e shkëlqyer nga Microsoft dhe komunitet i madh"
+          ],
+          "cons": [
+            "Historisht i lidhur fort me ekosistemin Microsoft/Windows",
+            "Versionet e reja dalin shpesh, duke krijuar lodhje nga ndryshimet",
+            "Konsum relativisht i lartë i memories",
+            "Performancë më e ulët se C++ për aplikacione grafike intensive"
+          ],
+          "example": "// Shembull C#\nusing System;\nusing System.Linq;\nusing System.Collections.Generic;\n\nclass Program {\n    static void Main() {\n        Console.WriteLine(\"Hello, World!\");\n        \n        // Faktorial\n        int n = 5;\n        int result = Enumerable.Range(1, n).Aggregate((a, b) => a * b);\n        Console.WriteLine($\"Faktoriali i {n} eshte: {result}\");\n        \n        // LINQ\n        var numrat = new List<int> { 1, 2, 3, 4, 5 };\n        var katror = numrat.Select(x => x * x);\n        Console.WriteLine($\"Katroret: {string.Join(\", \", katror)}\");\n    }\n}"
+        },
+        "en": {
+          "title": "C# - Trivia and Technical Details",
+          "funFacts": [
+            "The name C# was inspired by the musical note C-Sharp. Microsoft wanted to indicate that the language was a 'step above' C and C++. In music, sharp indicates a note that is half a tone higher.",
+            "Anders Hejlsberg, the creator of C#, Turbo Pascal, and TypeScript, is one of the most influential programmers in history. He worked at Microsoft for over 25 years and continues to lead TypeScript development."
+          ],
+          "companies": "Microsoft, Unity Technologies, Stack Overflow, Accenture, Dell, Intel, Bank of America, Siemens",
+          "pros": [
+            "High productivity with clean syntax and powerful IntelliSense",
+            "Unity, the most popular game engine, uses C# as its primary language",
+            "ASP.NET Core is one of the fastest web frameworks",
+            "Excellent support from Microsoft and large community"
+          ],
+          "cons": [
+            "Historically tied to Microsoft/Windows ecosystem",
+            "New versions release frequently, causing update fatigue",
+            "Relatively high memory consumption",
+            "Lower performance than C++ for graphics-intensive applications"
+          ],
+          "example": "// C# example\nusing System;\nusing System.Linq;\nusing System.Collections.Generic;\n\nclass Program {\n    static void Main() {\n        Console.WriteLine(\"Hello, World!\");\n        \n        // Factorial\n        int n = 5;\n        int result = Enumerable.Range(1, n).Aggregate((a, b) => a * b);\n        Console.WriteLine($\"Factorial of {n} is: {result}\");\n        \n        // LINQ\n        var numbers = new List<int> { 1, 2, 3, 4, 5 };\n        var squares = numbers.Select(x => x * x);\n        Console.WriteLine($\"Squares: {string.Join(\", \", squares)}\");\n    }\n}"
+        }
       }
     },
     {
@@ -113,17 +433,81 @@
       "name": "Go",
       "category": "Backend",
       "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg",
-      "sq": {
-        "description": "Go, i njohur edhe si Golang, është një gjuhë programimi relativisht e re e krijuar nga Google në vitin 2009. Ajo u projektua për të adresuar sfidat e zhvillimit të softuerit në shkallë të gjerë: kohë të gjata kompilimi, menaxhim kompleks të varësive dhe ekzekutim jo efikas. Go ofron performancë të lartë, sintaksë të pastër, dhe konkurencë të integruar përmes goroutines dhe kanaleve. Përdoret gjerësisht nga kompani si Google, Uber, Dropbox dhe Netflix për mikroshërbime dhe infrastrukturë cloud.",
-        "usage": "Mikroshërbime, Cloud (Docker, Kubernetes), DevOps, Rrjeta, CLI",
-        "example": "package main\n\nimport \"fmt\"\n\nfunc main() {\n  fmt.Println(\"Hello, World!\")\n  \n  emri := \"Ardian\"\n  mosha := 25\n  fmt.Printf(\"Emri: %s, Mosha: %d\\n\", emri, mosha)\n}",
-        "funFact": "Go u krijua nga tre inxhinierë legjendarë të Google: Robert Griesemer, Rob Pike (bashkë-krijuesi i Unix-it) dhe Ken Thompson (krijuesi i gjuhës B dhe Unix-it)."
+      "page1": {
+        "sq": {
+          "title": "Go - Thjeshtesia dhe Konkurenca",
+          "paragraphs": [
+            "Go, i njohur edhe si Golang, u krijua nga Google në vitin 2009 nga tre inxhinierë të jashtëzakonshëm: Robert Griesemer, Rob Pike (bashkë-krijues i Unix-it) dhe Ken Thompson (krijues i gjuhës B dhe Unix-it). Ata projektuan Go-në për të adresuar problemet që hasnin në Google: kohë të gjata kompilimi, menaxhim kompleks të varësive, dhe vështirësi në shkrimin e kodit konkurent. Go ofron një sintaksë të pastër dhe minimale, por me fuqi të madhe.",
+            "Go është projektuar për zhvillimin e infrastrukturës së cloud dhe mikroshërbimeve. Ajo ofron konkurencë të integruar përmes goroutines, të cilat janë mijëra herë më të lehta se thread-et tradicionale. Go ka një nga kohët më të shpejta të kompilimit në botë - një projekt i madh Go kompilohet në sekonda, jo në minuta. Kjo e bën Go-në ideale për DevOps, CLI tools, dhe shërbime cloud. Docker, Kubernetes, dhe Terraform janë shkruar në Go."
+          ],
+          "features": [
+            "Konkurencë e integruar përmes goroutines dhe channels",
+            "Kompilim jashtëzakonisht i shpejtë (sekonda për projekte të mëdha)",
+            "Garbage collection automatik për menaxhim të memories",
+            "Static typing me inferencë tipe për produktivitet",
+            "Binary i vetëm pa varësi për shpërndarje të lehtë"
+          ],
+          "usage": "Mikroshërbime, Cloud (Docker, Kubernetes), DevOps, CLI, Rrjeta, Backend"
+        },
+        "en": {
+          "title": "Go - Simplicity and Concurrency",
+          "paragraphs": [
+            "Go, also known as Golang, was created by Google in 2009 by three extraordinary engineers: Robert Griesemer, Rob Pike (co-creator of Unix), and Ken Thompson (creator of the B language and Unix). They designed Go to address the problems they encountered at Google: long compilation times, complex dependency management, and difficulty writing concurrent code. Go offers a clean and minimal syntax, but with great power.",
+            "Go is designed for cloud infrastructure and microservices development. It offers built-in concurrency through goroutines, which are thousands of times lighter than traditional threads. Go has one of the fastest compilation times in the world - a large Go project compiles in seconds, not minutes. This makes Go ideal for DevOps, CLI tools, and cloud services. Docker, Kubernetes, and Terraform are all written in Go."
+          ],
+          "features": [
+            "Built-in concurrency through goroutines and channels",
+            "Extremely fast compilation (seconds for large projects)",
+            "Automatic garbage collection for memory management",
+            "Static typing with type inference for productivity",
+            "Single binary without dependencies for easy distribution"
+          ],
+          "usage": "Microservices, Cloud (Docker, Kubernetes), DevOps, CLI, Networking, Backend"
+        }
       },
-      "en": {
-        "description": "Go, also known as Golang, is a relatively new programming language created by Google in 2009. It was designed to address the challenges of large-scale software development: long compilation times, complex dependency management, and inefficient execution. Go offers high performance, clean syntax, and built-in concurrency through goroutines and channels. It is widely used by companies like Google, Uber, Dropbox, and Netflix for microservices and cloud infrastructure.",
-        "usage": "Microservices, Cloud (Docker, Kubernetes), DevOps, Networking, CLI",
-        "example": "package main\n\nimport \"fmt\"\n\nfunc main() {\n  fmt.Println(\"Hello, World!\")\n  \n  name := \"John\"\n  age := 25\n  fmt.Printf(\"Name: %s, Age: %d\\n\", name, age)\n}",
-        "funFact": "Go was created by three legendary Google engineers: Robert Griesemer, Rob Pike (co-creator of Unix), and Ken Thompson (creator of the B language and Unix)."
+      "page2": {
+        "sq": {
+          "title": "Go - Kuriozitete dhe Detaje Teknike",
+          "funFacts": [
+            "Maskota zyrtare e Go-së janë gopher-at (brejtës të vegjël). Mascota u dizajnua nga Renee French, dhe është bërë një simbol i njohur në komunitetin e programimit. Gopher-i shfaqet në logo, dokumentacion dhe konferenca.",
+            "Go nuk ka while loop! Përdoret vetëm for loop, por në forma të ndryshme (for, for range, for me kusht). Kjo është pjesë e filozofisë së Go-së për të pasur sa më pak veçori, por secila të jetë e fuqishme dhe e qartë."
+          ],
+          "companies": "Google, Uber, Dropbox, Netflix, Twitch, Cloudflare, Kubernetes, Docker, HashiCorp, PayPal",
+          "pros": [
+            "Kompilim ekstremisht i shpejtë për produktivitet të lartë",
+            "Goroutines janë shumë më të lehta se thread-et tradicionale",
+            "Binary i vetëm pa varësi për deploy të thjeshtë",
+            "Sintaksë e pastër dhe e lexueshme me pak veçori"
+          ],
+          "cons": [
+            "Pa generics (të shtuara vetëm në Go 1.18, ende të kufizuara)",
+            "Menaxhimi i varësive ishte problematik para Go modules",
+            "Ekosistem më i vogël se Python ose JavaScript",
+            "Pa exceptions: përdorim i shpeshtë i if err != nil"
+          ],
+          "example": "// Shembull Go\npackage main\n\nimport \"fmt\"\n\nfunc factorial(n int) int {\n    if n <= 1 {\n        return 1\n    }\n    return n * factorial(n-1)\n}\n\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n    \n    n := 5\n    fmt.Printf(\"Faktoriali i %d eshte: %d\\n\", n, factorial(n))\n    \n    // Goroutine dhe channel\n    ch := make(chan int)\n    go func() {\n        sum := 0\n        for i := 1; i <= 5; i++ {\n            sum += i\n        }\n        ch <- sum\n    }()\n    result := <-ch\n    fmt.Printf(\"Shuma: %d\\n\", result)\n}"
+        },
+        "en": {
+          "title": "Go - Trivia and Technical Details",
+          "funFacts": [
+            "Go's official mascot are the gophers (small rodents). The mascot was designed by Renee French and has become a well-known symbol in the programming community. The gopher appears in the logo, documentation, and conferences.",
+            "Go does not have a while loop! Only for loops are used, but in different forms (for, for range, for with condition). This is part of Go's philosophy of having fewer features, each being powerful and clear."
+          ],
+          "companies": "Google, Uber, Dropbox, Netflix, Twitch, Cloudflare, Kubernetes, Docker, HashiCorp, PayPal",
+          "pros": [
+            "Extremely fast compilation for high productivity",
+            "Goroutines are much lighter than traditional threads",
+            "Single binary without dependencies for easy deployment",
+            "Clean and readable syntax with few features"
+          ],
+          "cons": [
+            "No generics (added only in Go 1.18, still limited)",
+            "Dependency management was problematic before Go modules",
+            "Smaller ecosystem than Python or JavaScript",
+            "No exceptions: frequent if err != nil usage"
+          ],
+          "example": "// Go example\npackage main\n\nimport \"fmt\"\n\nfunc factorial(n int) int {\n    if n <= 1 {\n        return 1\n    }\n    return n * factorial(n-1)\n}\n\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n    \n    n := 5\n    fmt.Printf(\"Factorial of %d is: %d\\n\", n, factorial(n))\n    \n    // Goroutine and channel\n    ch := make(chan int)\n    go func() {\n        sum := 0\n        for i := 1; i <= 5; i++ {\n            sum += i\n        }\n        ch <- sum\n    }()\n    result := <-ch\n    fmt.Printf(\"Sum: %d\\n\", result)\n}"
+        }
       }
     },
     {
@@ -131,17 +515,82 @@
       "name": "Rust",
       "category": "Backend",
       "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg",
-      "sq": {
-        "description": "Rust është një gjuhë sistemi që garanton siguri memorie pa pasur nevojë për një garbage collector, duke e bërë atë një nga gjuhët më të sigurta dhe më të shpejta në ekzistencë. E krijuar nga Mozilla Research në vitin 2010, Rust ka fituar një komunitet të madh dhe entuziast për shkak të sistemit të saj unik të pronësisë (ownership) që parandalon gabimet e memories në kohën e kompilimit. Rust përdoret gjithnjë e më shumë për të shkruar sisteme operative, WebAssembly, dhe komponentë kritikë për sigurinë.",
-        "usage": "Sisteme Operative, WebAssembly, CLI, Rrjeta, Embedded, Blockchain",
-        "example": "fn main() {\n  println!(\"Hello, World!\");\n  \n  let emri = \"Ardian\";\n  let mosha = 25;\n  println!(\"Unë jam {emri} dhe jam {mosha} vjeç.\");\n}",
-        "funFact": "Rust ka qenë vazhdimisht gjuha më e dashur në Stack Overflow për 8 vite rresht. Përdoruesit e duan për sigurinë, shpejtësinë dhe dokumentimin e shkëlqyer."
+      "page1": {
+        "sq": {
+          "title": "Rust - Siguria dhe Shpejtesia",
+          "paragraphs": [
+            "Rust u krijua nga Graydon Hoare në Mozilla Research në vitin 2010, si një projekt personal para se të bëhej një përpjekje zyrtare e Mozilla-s. Rust u projektua për të zgjidhur një problem themelor në programimin e sistemeve: si të kesh performancën e C++-së pa pasur gabimet e memories që e mundojnë atë. Zgjidhja e Rust-it është sistemi i saj unik i pronësisë (ownership), i cili garanton siguri memorie në kohën e kompilimit, pa pasur nevojë për garbage collector.",
+            "Rust ka fituar një komunitet të jashtëzakonshëm dhe entuziast. Në Stack Overflow, Rust ka qenë gjuha më e dashur për 8 vite rresht, një rekord i paprecedentë. Rust përdoret për të shkruar sisteme operative, shfletues web (FireFox ka komponentë në Rust), WebAssembly, motorë blockchain, dhe infrastrukturë kritike. Kompanitë po adoptojnë Rust gjithnjë e më shumë për shkak të sigurisë dhe performancës që ofron, veçanërisht në sistemet embedded dhe IoT."
+          ],
+          "features": [
+            "Ownership system që garanton siguri memorie pa garbage collector",
+            "Performancë identike me C++ (zero-cost abstractions)",
+            "Traits për polimorfizëm pa overhead",
+            "Pattern matching i fuqishëm me enum dhe option",
+            "Cargo: një nga menaxherët më të mirë të paketave dhe build-eve"
+          ],
+          "usage": "Sisteme, WebAssembly, CLI, Blockchain, Embedded, Rrjeta, Motor kerkimi"
+        },
+        "en": {
+          "title": "Rust - Safety and Speed",
+          "paragraphs": [
+            "Rust was created by Graydon Hoare at Mozilla Research in 2010, as a personal project before becoming an official Mozilla effort. Rust was designed to solve a fundamental problem in systems programming: how to have C++'s performance without the memory bugs that plague it. Rust's solution is its unique ownership system, which guarantees memory safety at compile time, without needing a garbage collector.",
+            "Rust has gained an extraordinary and enthusiastic community. On Stack Overflow, Rust has been the most loved language for 8 consecutive years, an unprecedented record. Rust is used to write operating systems, web browsers (FireFox has components in Rust), WebAssembly, blockchain engines, and critical infrastructure. Companies are increasingly adopting Rust for its safety and performance, especially in embedded systems and IoT."
+          ],
+          "features": [
+            "Ownership system guaranteeing memory safety without garbage collector",
+            "Performance identical to C++ (zero-cost abstractions)",
+            "Traits for polymorphism without overhead",
+            "Powerful pattern matching with enum and option",
+            "Cargo: one of the best package and build managers"
+          ],
+          "usage": "Systems, WebAssembly, CLI, Blockchain, Embedded, Networking, Search engines"
+        }
       },
-      "en": {
-        "description": "Rust is a systems language that guarantees memory safety without needing a garbage collector, making it one of the safest and fastest languages in existence. Created by Mozilla Research in 2010, Rust has gained a large and enthusiastic community because of its unique ownership system that prevents memory bugs at compile time. Rust is increasingly used for writing operating systems, WebAssembly, and security-critical components.",
-        "usage": "Operating Systems, WebAssembly, CLI, Networking, Embedded, Blockchain",
-        "example": "fn main() {\n  println!(\"Hello, World!\");\n  \n  let name = \"John\";\n  let age = 25;\n  println!(\"I am {name} and I am {age} years old.\");\n}",
-        "funFact": "Rust has consistently been the most loved language on Stack Overflow for 8 consecutive years. Users love it for its safety, speed, and excellent documentation."
+      "page2": {
+        "sq": {
+          "title": "Rust - Kuriozitete dhe Detaje Teknike",
+          "funFacts": [
+            "Rust ka qenë gjuha më e dashur në Stack Overflow për 8 vite rresht (2016-2024), një rekord absolut. Përdoruesit e duan për sigurinë, shpejtësinë, dokumentimin e shkëlqyer dhe mesazhet e qarta të gabimeve nga kompajleri.",
+            "Maska e Rust-it është Ferris, një gaforre e vogël. Emri vjen nga fjala 'rust' (ndryshk) dhe gaforret janë krustace (crustacean), duke bërë një lojë fjalësh. Ferris shpesh shfaqet me kthetra të ngritura duke treguar 'unsafe' kun."
+
+          ],
+          "companies": "Mozilla, Microsoft, Google (Android), Meta (Diem), Amazon (AWS), Cloudflare, Dropbox, Figma, npm",
+          "pros": [
+            "Siguri memorie e garantuar në kohë kompilimi - zero memory bugs",
+            "Performancë e nivelit C/C++ me siguri të nivelit Python/Java",
+            "Kompajleri më i mirë në botë me mesazhe gabimi të qarta dhe sugjerime",
+            "Cargo është menaxheri më i mirë i paketave në ekosistem"
+          ],
+          "cons": [
+            "Kurbë e lartë mësimi për shkak të konceptit të ownership dhe lifetimes",
+            "Kohë më e gjatë kompilimi se shumica e gjuhëve",
+            "Ekosistem më i vogël se C++ ose Python",
+            "Jo ideale për prototipim të shpejtë"
+          ],
+          "example": "// Shembull Rust\nfn factorial(n: u64) -> u64 {\n    match n {\n        0 | 1 => 1,\n        _ => n * factorial(n - 1),\n    }\n}\n\nfn main() {\n    println!(\"Hello, World!\");\n    \n    let n = 5;\n    println!(\"Faktoriali i {} eshte: {}\", n, factorial(n));\n    \n    // Iterator\n    let katror: Vec<i32> = (1..=5).map(|x| x * x).collect();\n    println!(\"Katroret: {:?}\", katror);\n    \n    // Ownership\n    let s = String::from(\"Rust\");\n    println!(\"Gjuha: {}\", s);\n}"
+        },
+        "en": {
+          "title": "Rust - Trivia and Technical Details",
+          "funFacts": [
+            "Rust has been the most loved language on Stack Overflow for 8 consecutive years (2016-2024), an absolute record. Users love it for its safety, speed, excellent documentation, and the compiler's clear error messages.",
+            "Rust's mascot is Ferris, a small crab. The name comes from 'rust' and crabs are crustaceans, making a play on words. Ferris is often shown with raised claws indicating 'unsafe' blocks."
+          ],
+          "companies": "Mozilla, Microsoft, Google (Android), Meta (Diem), Amazon (AWS), Cloudflare, Dropbox, Figma, npm",
+          "pros": [
+            "Memory safety guaranteed at compile time - zero memory bugs",
+            "C/C++ level performance with Python/Java level safety",
+            "Best compiler in the world with clear error messages and suggestions",
+            "Cargo is the best package manager in any ecosystem"
+          ],
+          "cons": [
+            "Steep learning curve due to ownership and lifetimes concepts",
+            "Longer compilation time than most languages",
+            "Smaller ecosystem than C++ or Python",
+            "Not ideal for quick prototyping"
+          ],
+          "example": "// Rust example\nfn factorial(n: u64) -> u64 {\n    match n {\n        0 | 1 => 1,\n        _ => n * factorial(n - 1),\n    }\n}\n\nfn main() {\n    println!(\"Hello, World!\");\n    \n    let n = 5;\n    println!(\"Factorial of {} is: {}\", n, factorial(n));\n    \n    // Iterator\n    let squares: Vec<i32> = (1..=5).map(|x| x * x).collect();\n    println!(\"Squares: {:?}\", squares);\n    \n    // Ownership\n    let s = String::from(\"Rust\");\n    println!(\"Language: {}\", s);\n}"
+        }
       }
     },
     {
@@ -149,17 +598,81 @@
       "name": "TypeScript",
       "category": "Frontend",
       "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-      "sq": {
-        "description": "TypeScript është një super-set i JavaScript që shton tipizim statik dhe veçori të tjera moderne të programimit. Krijuar nga Microsoft në vitin 2012, TypeScript ka revolucionarizuar mënyrën si shkruhet JavaScript në shkallë të madhe. Duke shtuar tipe, ndërfaqe dhe klasa, TypeScript ndihmon zhvilluesit të kapin gabime para se kodi të ekzekutohet, duke e bërë kodin më të sigurt dhe më të lehtë për tu mirëmbajtur. Angular, React dhe Vue modern përdorin TypeScript si gjuhë kryesore.",
-        "usage": "Web Frontend, Web Backend (Node.js), Aplikacione të mëdha, Mobile",
-        "example": "function perpershendet(emri: string): string {\n  return `Pershendetje, ${emri}!`;\n}\n\nconst mesazh = perpershendet(\"Ardian\");\nconsole.log(mesazh);\n\n// Ndërfaqe\ninterface Person {\n  emri: string;\n  mosha: number;\n}",
-        "funFact": "TypeScript u zhvillua nga Anders Hejlsberg, i njëjti person që krijoi C# dhe Turbo Pascal. Ai është një nga arkitektët më me ndikim në historinë e programimit."
+      "page1": {
+        "sq": {
+          "title": "TypeScript - JavaScript me Tipe",
+          "paragraphs": [
+            "TypeScript u krijua nga Microsoft në vitin 2012, me Anders Hejlsberg (krijuesin e C# dhe Turbo Pascal) si arkitektin kryesor. TypeScript është një super-set i JavaScript që shton tipizim statik dhe veçori të tjera moderne. Ai u projektua për të adresuar problemin kryesor të JavaScript në shkallë të madhe: mungesën e tipeve, e cila çon në gabime të vështira për t'u gjetur dhe kod të vështirë për t'u mirëmbajtur.",
+            "TypeScript ka pësuar një adoptim të jashtëzakonshëm që nga publikimi i tij. Sot, të gjitha framework-et kryesore të frontend-it (Angular, React, Vue, Svelte) e mbështesin TypeScript-in si gjuhë të parë. TypeScript ofron autocomplete më të mirë, refaktoring më të sigurt, dhe dokumentim të integruar përmes tipeve. Facebook, Google, Microsoft, dhe AirBnb janë ndër kompanitë që përdorin TypeScript në shkallë të gjerë. TypeScript nuk zëvendëson JavaScript-in, por i shton atij një shtresë sigurie dhe produktiviteti."
+          ],
+          "features": [
+            "Static typing me inferencë tipe për produktivitet maksimal",
+            "Interfaces dhe type aliases për kontrata të qarta",
+            "Generics për kod të ripërdorshëm dhe type-safe",
+            "Enums, tuples, union types, dhe intersection types",
+            "Kompilohet në JavaScript standard, duke punuar kudo"
+          ],
+          "usage": "Web Frontend (Angular, React, Vue), Web Backend (Node.js), Mobile, Aplikacione të mëdha"
+        },
+        "en": {
+          "title": "TypeScript - JavaScript with Types",
+          "paragraphs": [
+            "TypeScript was created by Microsoft in 2012, with Anders Hejlsberg (creator of C# and Turbo Pascal) as the lead architect. TypeScript is a superset of JavaScript that adds static typing and other modern features. It was designed to address JavaScript's main problem at scale: the lack of types, which leads to hard-to-find bugs and difficult-to-maintain code.",
+            "TypeScript has seen remarkable adoption since its release. Today, all major frontend frameworks (Angular, React, Vue, Svelte) support TypeScript as a first-class language. TypeScript offers better autocomplete, safer refactoring, and built-in documentation through types. Facebook, Google, Microsoft, and Airbnb are among the companies using TypeScript at scale. TypeScript does not replace JavaScript, but adds a layer of safety and productivity to it."
+          ],
+          "features": [
+            "Static typing with type inference for maximum productivity",
+            "Interfaces and type aliases for clear contracts",
+            "Generics for reusable and type-safe code",
+            "Enums, tuples, union types, and intersection types",
+            "Compiles to standard JavaScript, working everywhere"
+          ],
+          "usage": "Web Frontend (Angular, React, Vue), Web Backend (Node.js), Mobile, Large applications"
+        }
       },
-      "en": {
-        "description": "TypeScript is a superset of JavaScript that adds static typing and other modern programming features. Created by Microsoft in 2012, TypeScript has revolutionized how JavaScript is written at scale. By adding types, interfaces and classes, TypeScript helps developers catch errors before code runs, making code safer and easier to maintain. Modern Angular, React, and Vue all use TypeScript as their primary language.",
-        "usage": "Web Frontend, Web Backend (Node.js), Large applications, Mobile",
-        "example": "function greet(name: string): string {\n  return `Hello, ${name}!`;\n}\n\nconst message = greet(\"John\");\nconsole.log(message);\n\n// Interface\ninterface Person {\n  name: string;\n  age: number;\n}",
-        "funFact": "TypeScript was developed by Anders Hejlsberg, the same person who created C# and Turbo Pascal. He is one of the most influential architects in programming history."
+      "page2": {
+        "sq": {
+          "title": "TypeScript - Kuriozitete dhe Detaje Teknike",
+          "funFacts": [
+            "TypeScript është një nga gjuhet me rritjen më të shpejtë në histori. GitHub raportoi se TypeScript ishte gjuha e dytë më e përdorur në platformë në 2023, pas JavaScript. Rreth 40% e projekteve të reja në GitHub përdorin TypeScript.",
+            "TypeScript nuk është vetëm për web! Ai përdoret gjithashtu në backend me Node.js, në aplikacione mobile me React Native, dhe madje edhe në lojëra me Babylon.js. Ekziston edhe TypeScript për Arduino (Johnny-Five me tipe TypeScript)."
+          ],
+          "companies": "Microsoft, Google, Meta, Airbnb, Slack, Asana, Shopify, Medium, Notion, Vercel",
+          "pros": [
+            "Kap gabime në kohën e zhvillimit para se kodi të shkojë në production",
+            "Autocomplete dhe IntelliSense superiore në editorë si VS Code",
+            "Refaktoring i sigurt pa frikën e thyerjes së funksionalitetit",
+            "Punon me të gjitha bibliotekat JavaScript ekzistuese"
+          ],
+          "cons": [
+            "Kërkon konfigurim shtesë (tsconfig.json) krahasuar me JavaScript të pastër",
+            "Kurbë mësimi për developuesit që nuk kanë punuar me tipe statike",
+            "Kohë më e gjatë build-i për shkak të kompilimit TypeScript → JavaScript",
+            "Tipet komplekse mund të jenë të vështira për t'u shkruar"
+          ],
+          "example": "// Shembull TypeScript\ninterface Person {\n    emri: string;\n    mosha: number;\n    email?: string;\n}\n\nfunction perpërshëndet(person: Person): string {\n    return `Pershendetje, ${person.emri}! Je ${person.mosha} vjec.`;\n}\n\nconst ardian: Person = { emri: \"Ardian\", mosha: 25 };\nconsole.log(perpërshëndet(ardian));\n\n// Generics\nfunction identitet<T>(arg: T): T {\n    return arg;\n}\nconsole.log(identitet<string>(\"TypeScript\"));"
+        },
+        "en": {
+          "title": "TypeScript - Trivia and Technical Details",
+          "funFacts": [
+            "TypeScript is one of the fastest-growing languages in history. GitHub reported that TypeScript was the second most used language on the platform in 2023, after JavaScript. About 40% of new projects on GitHub use TypeScript.",
+            "TypeScript is not just for the web! It is also used on the backend with Node.js, in mobile applications with React Native, and even in games with Babylon.js. There is also TypeScript for Arduino (Johnny-Five with TypeScript types)."
+          ],
+          "companies": "Microsoft, Google, Meta, Airbnb, Slack, Asana, Shopify, Medium, Notion, Vercel",
+          "pros": [
+            "Catches bugs at development time before code goes to production",
+            "Superior autocomplete and IntelliSense in editors like VS Code",
+            "Safe refactoring without fear of breaking functionality",
+            "Works with all existing JavaScript libraries"
+          ],
+          "cons": [
+            "Requires additional configuration (tsconfig.json) compared to plain JavaScript",
+            "Learning curve for developers who haven't worked with static types",
+            "Longer build time due to TypeScript → JavaScript compilation",
+            "Complex types can be difficult to write"
+          ],
+          "example": "// TypeScript example\ninterface Person {\n    name: string;\n    age: number;\n    email?: string;\n}\n\nfunction greet(person: Person): string {\n    return `Hello, ${person.name}! You are ${person.age} years old.`;\n}\n\nconst john: Person = { name: \"John\", age: 25 };\nconsole.log(greet(john));\n\n// Generics\nfunction identity<T>(arg: T): T {\n    return arg;\n}\nconsole.log(identity<string>(\"TypeScript\"));"
+        }
       }
     },
     {
@@ -167,17 +680,81 @@
       "name": "PHP",
       "category": "Backend",
       "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg",
-      "sq": {
-        "description": "PHP është gjuha që fuqizon mbi 75% të të gjitha faqeve web në botë. Krijuar nga Rasmus Lerdorf në vitin 1994, PHP filloi si një grup skriptash të thjeshta për të mbajtur gjurmët e vizitave në faqen e tij personale dhe u zhvillua në një gjuhë të plotë server-side. Sot, PHP është shtylla kurrizore e platformave të mëdha si WordPress (që fuqizon mbi 40% të web-it), Wikipedia, Facebook (fillimisht) dhe platformave të shumta e-commerce. Me Laravel dhe Symfony, PHP vazhdon të jetë një zgjedhje e shkëlqyer për zhvillim web.",
-        "usage": "Web Backend (Laravel, Symfony), WordPress, CMS, E-commerce",
-        "example": "<?php\n  echo \"Hello, World!\";\n  \n  $emri = \"Ardian\";\n  echo \"Miresevini, $emri!\";\n  \n  // Array\n  $languages = [\"PHP\", \"JavaScript\", \"Python\"];\n  foreach ($languages as $lang) {\n    echo \"<br>$lang\";\n  }\n?>",
-        "funFact": "PHP fillimisht qëndronte për 'Personal Home Page' (Faqja Personale e Shtëpisë). Sot quhet 'PHP: Hypertext Preprocessor', një shembull i një rekursioni akronimi."
+      "page1": {
+        "sq": {
+          "title": "PHP - Fuqia pas Web-it",
+          "paragraphs": [
+            "PHP u krijua nga Rasmus Lerdorf në vitin 1994 si një grup skriptash të thjeshta për të mbajtur gjurmët e vizitave në faqen e tij personale. Ajo që filloi si 'Personal Home Page' u shndërrua në një gjuhë të plotë server-side që sot fuqizon mbi 75% të të gjitha faqeve web në botë. Rasmus nuk e kishte aspak idenë se skriptat e tij të vogla do të bëheshin një nga gjuhet më të përdorura në internet.",
+            "PHP ka evoluar shumë që nga versionet e para. Me PHP 7 dhe 8, performanca u përmirësua në mënyrë drastike dhe u shtuan veçori moderne si JIT compilation, typed properties, match expressions dhe union types. Framework-et moderne si Laravel dhe Symfony e kanë bërë PHP-në një zgjedhje të shkëlqyer për zhvillimin e aplikacioneve web. WordPress, platforma që fuqizon mbi 40% të web-it, është shkruar në PHP."
+          ],
+          "features": [
+            "Gjuhë server-side e dedikuar për zhvillimin web",
+            "Integrim i thellë me bazat e të dhënave (MySQL, PostgreSQL, MongoDB)",
+            "Framework-e moderne: Laravel, Symfony, CodeIgniter",
+            "WordPress: CMS-i më popullor në botë, i shkruar në PHP",
+            "Hosting i gjerë dhe i lirë në të gjithë botën"
+          ],
+          "usage": "Web Backend (Laravel, Symfony), WordPress, CMS, E-commerce, API"
+        },
+        "en": {
+          "title": "PHP - The Power Behind the Web",
+          "paragraphs": [
+            "PHP was created by Rasmus Lerdorf in 1994 as a simple set of scripts to track visits to his personal website. What started as 'Personal Home Page' turned into a full server-side language that now powers over 75% of all websites in the world. Rasmus had no idea his small scripts would become one of the most used languages on the internet.",
+            "PHP has evolved tremendously since its early versions. With PHP 7 and 8, performance improved dramatically and modern features like JIT compilation, typed properties, match expressions, and union types were added. Modern frameworks like Laravel and Symfony have made PHP an excellent choice for web application development. WordPress, the platform that powers over 40% of the web, is written in PHP."
+          ],
+          "features": [
+            "Server-side language dedicated to web development",
+            "Deep integration with databases (MySQL, PostgreSQL, MongoDB)",
+            "Modern frameworks: Laravel, Symfony, CodeIgniter",
+            "WordPress: the most popular CMS in the world, written in PHP",
+            "Wide and affordable hosting available globally"
+          ],
+          "usage": "Web Backend (Laravel, Symfony), WordPress, CMS, E-commerce, API"
+        }
       },
-      "en": {
-        "description": "PHP is the language that powers over 75% of all websites in the world. Created by Rasmus Lerdorf in 1994, PHP started as a simple set of scripts to track visits to his personal website and evolved into a full server-side language. Today, PHP is the backbone of major platforms like WordPress (which powers over 40% of the web), Wikipedia, Facebook (originally), and countless e-commerce platforms. With Laravel and Symfony, PHP continues to be an excellent choice for web development.",
-        "usage": "Web Backend (Laravel, Symfony), WordPress, CMS, E-commerce",
-        "example": "<?php\n  echo \"Hello, World!\";\n  \n  $name = \"John\";\n  echo \"Welcome, $name!\";\n  \n  // Array\n  $languages = [\"PHP\", \"JavaScript\", \"Python\"];\n  foreach ($languages as $lang) {\n    echo \"<br>$lang\";\n  }\n?>",
-        "funFact": "PHP originally stood for 'Personal Home Page'. Today it is called 'PHP: Hypertext Preprocessor', a recursive acronym example."
+      "page2": {
+        "sq": {
+          "title": "PHP - Kuriozitete dhe Detaje Teknike",
+          "funFacts": [
+            "PHP fillimisht qëndronte për 'Personal Home Page'. Sot quhet 'PHP: Hypertext Preprocessor', një shembull rekursioni akronimi ku shkronja e parë qëndron për vetë akronimin.",
+            "Facebook fillimisht u ndërtua tërësisht në PHP. Edhe sot, pjesa më e madhe e kodit të Facebook-ut është në PHP, megjithëse ata krijuan HHVM (HipHop Virtual Machine) për të përmirësuar performancën."
+          ],
+          "companies": "Facebook/Meta, Wikipedia, WordPress, Slack (fillimisht), Etsy, Mailchimp, Tumblr, Flickr",
+          "pros": [
+            "Lehtë për t'u mësuar dhe për t'u filluar - nje nga gjuhet me te thjeshta per fillestare",
+            "Hosting i lire dhe i gjere - pothuajse cdo hosting web ofron PHP",
+            "Dokumentacion i shkelqyer dhe komunitet i madh",
+            "Laravel eshte nje nga framework-et me te mire web"
+          ],
+          "cons": [
+            "Inkonsistenca historike ne emertimin e funksioneve dhe parametrave",
+            "Performancë më e ulët se Node.js ose Go per aplikacione real-time",
+            "Mekanizma sigurie qe kerkojne kujdes (SQL injection, XSS)",
+            "Tipimi i dobet dinamik mund te shkaktoje gabime runtime"
+          ],
+          "example": "<?php\n// Shembull PHP\necho \"Hello, World!\\n\";\n\n// Faktorial\nfunction factorial($n) {\n    if ($n <= 1) return 1;\n    return $n * factorial($n - 1);\n}\n\n$n = 5;\necho \"Faktoriali i $n eshte: \" . factorial($n) . \"\\n\\n\";\n\n// Array me array_map\n$numrat = [1, 2, 3, 4, 5];\n$katror = array_map(fn($x) => $x ** 2, $numrat);\necho \"Katroret: \" . implode(\", \", $katror) . \"\\n\";\n?>"
+        },
+        "en": {
+          "title": "PHP - Trivia and Technical Details",
+          "funFacts": [
+            "PHP originally stood for 'Personal Home Page'. Today it's called 'PHP: Hypertext Preprocessor', a recursive acronym where the first letter stands for the acronym itself.",
+            "Facebook was originally built entirely in PHP. Even today, most of Facebook's code is in PHP, though they created HHVM (HipHop Virtual Machine) to improve performance."
+          ],
+          "companies": "Facebook/Meta, Wikipedia, WordPress, Slack (originally), Etsy, Mailchimp, Tumblr, Flickr",
+          "pros": [
+            "Easy to learn and get started - one of the simplest languages for beginners",
+            "Cheap and widespread hosting - almost every web host offers PHP",
+            "Excellent documentation and large community",
+            "Laravel is one of the best web frameworks available"
+          ],
+          "cons": [
+            "Historical inconsistencies in function naming and parameters",
+            "Lower performance than Node.js or Go for real-time applications",
+            "Security mechanisms require care (SQL injection, XSS)",
+            "Weak dynamic typing can cause runtime errors"
+          ],
+          "example": "<?php\n// PHP example\necho \"Hello, World!\\n\";\n\n// Factorial\nfunction factorial($n) {\n    if ($n <= 1) return 1;\n    return $n * factorial($n - 1);\n}\n\n$n = 5;\necho \"Factorial of $n is: \" . factorial($n) . \"\\n\\n\";\n\n// Array with array_map\n$numbers = [1, 2, 3, 4, 5];\n$squares = array_map(fn($x) => $x ** 2, $numbers);\necho \"Squares: \" . implode(\", \", $squares) . \"\\n\";\n?>"
+        }
       }
     },
     {
@@ -185,17 +762,81 @@
       "name": "Ruby",
       "category": "Backend",
       "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original.svg",
-      "sq": {
-        "description": "Ruby është një gjuhë programimi elegante dhe e lexueshme, e krijuar në Japoni nga Yukihiro 'Matz' Matsumoto në vitin 1995. Filosofia e Ruby-t është e përqendruar te lumturia e programuesit: gjuha është projektuar për të qenë intuitive, fleksibile dhe e këndshme për t'u përdorur. Ruby fitoi famë botërore me framework-un Ruby on Rails, i cili revolucionarizoi zhvillimin web duke futur koncepte si 'convention over configuration'. Startup-e të njohura si Airbnb, GitHub dhe Shopify janë ndërtuar me Ruby on Rails.",
-        "usage": "Web Backend (Ruby on Rails), Prototyping, Automatizim, Scripting",
-        "example": "puts \"Hello, World!\"\n\nprint \"Emri juaj: \"\nname = gets.chomp\nputs \"Miresevini, #{name}!\"\n\n# Metodë e thjeshtë\ndef mbledh(a, b)\n  a + b\nend\n\nputs \"Shuma: #{mbledh(10, 5)}\"",
-        "funFact": "Matz krijoi Ruby me parimin 'Principle of Least Surprise' (Parimi i Habisë më të Vogël): gjuha duhet të sillet ashtu siç programuesi pret."
+      "page1": {
+        "sq": {
+          "title": "Ruby - Eleganca dhe Lumturia",
+          "paragraphs": [
+            "Ruby u krijua nga Yukihiro 'Matz' Matsumoto në Japoni në vitin 1995. Matz është i njohur për filozofinë e tij: Ruby u projektua për të maksimizuar lumturinë e programuesit. Ai kombinoi pjesët më të mira nga gjuhët e tij të preferuara (Perl, Smalltalk, Lisp) për të krijuar një gjuhë që është elegante, intuitive dhe e këndshme për t'u përdorur. Parimi 'Principle of Least Surprise' thotë se gjuha duhet të sillet ashtu siç pret programuesi.",
+            "Ruby fitoi famë botërore me framework-un Ruby on Rails, i krijuar nga David Heinemeier Hansson (DHH) në vitin 2004. Rails revolucionarizoi zhvillimin web duke futur koncepte si 'convention over configuration' dhe 'don't repeat yourself' (DRY). Rails bëri të mundur ndërtimin e aplikacioneve web komplekse në një fraksion të kohës që duhej më parë. Startup-e të njohura si Airbnb, GitHub, Shopify dhe Basecamp janë ndërtuar me Ruby on Rails."
+          ],
+          "features": [
+            "Sintaksë elegante dhe e lexueshme që i ngjan gjuhës angleze",
+            "Gjithçka është objekt - edhe numrat dhe klasat",
+            "Metaprogramming i fuqishëm për kod dinamik dhe fleksibël",
+            "Ruby on Rails: framework web që mundësoi startup revolution",
+            "Komunitet miqësor dhe i përqendruar te cilësia"
+          ],
+          "usage": "Web Backend (Ruby on Rails), Prototyping, Automatizim, Scripting, E-commerce"
+        },
+        "en": {
+          "title": "Ruby - Elegance and Happiness",
+          "paragraphs": [
+            "Ruby was created by Yukihiro 'Matz' Matsumoto in Japan in 1995. Matz is known for his philosophy: Ruby was designed to maximize programmer happiness. He combined the best parts of his favorite languages (Perl, Smalltalk, Lisp) to create a language that is elegant, intuitive, and enjoyable to use. The 'Principle of Least Surprise' states that the language should behave as the programmer expects.",
+            "Ruby gained worldwide fame with the Ruby on Rails framework, created by David Heinemeier Hansson (DHH) in 2004. Rails revolutionized web development by introducing concepts like 'convention over configuration' and 'don't repeat yourself' (DRY). Rails made it possible to build complex web applications in a fraction of the time previously needed. Popular startups like Airbnb, GitHub, Shopify, and Basecamp are built with Ruby on Rails."
+          ],
+          "features": [
+            "Elegant and readable syntax resembling English",
+            "Everything is an object - even numbers and classes",
+            "Powerful metaprogramming for dynamic and flexible code",
+            "Ruby on Rails: the web framework that enabled the startup revolution",
+            "Friendly community focused on quality"
+          ],
+          "usage": "Web Backend (Ruby on Rails), Prototyping, Automation, Scripting, E-commerce"
+        }
       },
-      "en": {
-        "description": "Ruby is an elegant and readable programming language, created in Japan by Yukihiro 'Matz' Matsumoto in 1995. Ruby's philosophy is centered on programmer happiness: the language is designed to be intuitive, flexible, and enjoyable to use. Ruby gained worldwide fame with the Ruby on Rails framework, which revolutionized web development by introducing concepts like 'convention over configuration'. Popular startups like Airbnb, GitHub, and Shopify are built with Ruby on Rails.",
-        "usage": "Web Backend (Ruby on Rails), Prototyping, Automation, Scripting",
-        "example": "puts \"Hello, World!\"\n\nprint \"Your name: \"\nname = gets.chomp\nputs \"Welcome, #{name}!\"\n\n# Simple method\ndef add(a, b)\n  a + b\nend\n\nputs \"Sum: #{add(10, 5)}\"",
-        "funFact": "Matz created Ruby with the 'Principle of Least Surprise': the language should behave exactly as the programmer expects it to."
+      "page2": {
+        "sq": {
+          "title": "Ruby - Kuriozitete dhe Detaje Teknike",
+          "funFacts": [
+            "Ruby ka një nga komunitetet më të përkushtuara në botë. Konferenca vjetore RubyConf dhe RailsConf mbledhin mijëra zhvillues nga e gjithë bota. Kultura e Ruby-t thekson testimin, kodimin e pastër dhe kontributin në open source.",
+            "Ruby on Rails u ekstraktua nga Basecamp, një aplikacion i menaxhimit të projekteve. DHH publikoi Rails si open source në korrik 2004, dhe brenda pak vitesh ai ndryshoi mënyrën si ndërtohen aplikacionet web në të gjithë botën."
+          ],
+          "companies": "GitHub, Airbnb, Shopify, Basecamp, Hulu, Twitch, SoundCloud, Zendesk, Cookpad, Kickstarter",
+          "pros": [
+            "Sintakse e bukur dhe e lexueshme qe rrit produktivitetin",
+            "Ruby on Rails eshte framework web i jashtezakonshem per prototipim",
+            "Komunitet i ngushte dhe mikprites me kulture te forte pune ne ekip",
+            "DSL (Domain Specific Languages) te fuqishme per konfigurim"
+          ],
+          "cons": [
+            "Performancë më e ulët se shumica e gjuhëve të tjera moderne",
+            "Konsum i lartë i memories për aplikacione të mëdha",
+            "Concurrency model më pak i pjekur se Go ose Elixir",
+            "Tregu i punës më i kufizuar se për Python ose JavaScript"
+          ],
+          "example": "# Shembull Ruby\nputs \"Hello, World!\"\n\n# Faktorial\ndef factorial(n)\n  return 1 if n <= 1\n  n * factorial(n - 1)\nend\n\nn = 5\nputs \"Faktoriali i #{n} eshte: #{factorial(n)}\"\n\n# Blocks\nnumrat = [1, 2, 3, 4, 5]\nkatror = numrat.map { |x| x ** 2 }\nputs \"Katroret: #{katror.join(\", \")}\""
+        },
+        "en": {
+          "title": "Ruby - Trivia and Technical Details",
+          "funFacts": [
+            "Ruby has one of the most dedicated communities in the world. The annual RubyConf and RailsConf conferences gather thousands of developers from around the world. Ruby culture emphasizes testing, clean coding, and contributing to open source.",
+            "Ruby on Rails was extracted from Basecamp, a project management application. DHH released Rails as open source in July 2004, and within a few years it changed how web applications are built around the world."
+          ],
+          "companies": "GitHub, Airbnb, Shopify, Basecamp, Hulu, Twitch, SoundCloud, Zendesk, Cookpad, Kickstarter",
+          "pros": [
+            "Beautiful and readable syntax that boosts productivity",
+            "Ruby on Rails is an exceptional web framework for prototyping",
+            "Close and welcoming community with strong team culture",
+            "Powerful DSLs (Domain Specific Languages) for configuration"
+          ],
+          "cons": [
+            "Lower performance than most other modern languages",
+            "High memory consumption for large applications",
+            "Concurrency model less mature than Go or Elixir",
+            "More limited job market than Python or JavaScript"
+          ],
+          "example": "# Ruby example\nputs \"Hello, World!\"\n\n# Factorial\ndef factorial(n)\n  return 1 if n <= 1\n  n * factorial(n - 1)\nend\n\nn = 5\nputs \"Factorial of #{n} is: #{factorial(n)}\"\n\n# Blocks\nnumbers = [1, 2, 3, 4, 5]\nsquares = numbers.map { |x| x ** 2 }\nputs \"Squares: #{squares.join(\", \")}\""
+        }
       }
     },
     {
@@ -203,17 +844,81 @@
       "name": "Kotlin",
       "category": "Backend",
       "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg",
-      "sq": {
-        "description": "Kotlin është një gjuhë programimi moderne dhe koncize që ekzekutohet në Java Virtual Machine (JVM). Krijuar nga JetBrains (kompania pas IntelliJ IDEA), Kotlin u bë gjuha zyrtare për zhvillimin e Android në vitin 2017, duke zëvendësuar Java-n si zgjedhjen e preferuar. Kotlin ofron sintaksë më të pastër, siguri më të lartë (duke eliminuar null pointer exceptions) dhe ndërveprim të plotë me Java-n. Përdoret gjithashtu për backend me Ktor dhe Spring Boot.",
-        "usage": "Android, Web Backend (Ktor, Spring), Multiplatform, Desktop",
-        "example": "fun main() {\n  println(\"Hello, World!\")\n  \n  print(\"Emri juaj: \")\n  val emri = readln()\n  println(\"Miresevini, $emri!\")\n  \n  // Null safety\n  var tekst: String? = null\n  println(tekst?.length ?: \"Tekst eshte null\")\n}",
-        "funFact": "Kotlin u emërua pas ishullit Kotlin në Rusi, afër Shën Petersburgut, ku JetBrains ka një laborator zhvillimi. Një tjetër gjuhë e JetBrains quhet 'Minsk'!"
+      "page1": {
+        "sq": {
+          "title": "Kotlin - Modern dhe Konciz",
+          "paragraphs": [
+            "Kotlin u krijua nga JetBrains, kompania prapa IntelliJ IDEA, në vitin 2011. Qëllimi ishte të krijohej një gjuhë më e mirë se Java për JVM, që të ishte koncize, e sigurt dhe interoperabile me Java-n. Kotlin u shpall gjuha zyrtare për zhvillimin e Android në vitin 2017, duke zëvendësuar Java-n si zgjedhjen e preferuar. Ky vendim historik i Google erdhi pasi Kotlin ofronte një eksperiencë dukshëm më të mirë për zhvilluesit e Android.",
+            "Kotlin ofron siguri të lartë duke eliminuar null pointer exceptions - një nga gabimet më të zakonshme në Java. Gjuha përfshin veçori moderne si data classes, sealed classes, coroutines për programim asinkron, dhe extension functions. Kotlin është 100% interoperabil me Java-n, duke lejuar përdorimin e të gjitha bibliotekave ekzistuese të Java-s. Përveç Android, Kotlin përdoret edhe për backend (Ktor, Spring Boot) dhe multiplatform (ndarje kodi mes Android dhe iOS)."
+          ],
+          "features": [
+            "Null safety: eliminon NullPointerException në nivel gjuhe",
+            "Konciz: rreth 40% më pak kod se Java për të njëjtën funksionalitet",
+            "Coroutines për programim asinkron të lehtë dhe të sigurt",
+            "100% interoperabil me Java-n dhe ekosistemin e saj",
+            "Multiplatform: ndan kodin mes Android, iOS, Web dhe Desktop"
+          ],
+          "usage": "Android, Web Backend (Ktor, Spring Boot), Multiplatform, Desktop"
+        },
+        "en": {
+          "title": "Kotlin - Modern and Concise",
+          "paragraphs": [
+            "Kotlin was created by JetBrains, the company behind IntelliJ IDEA, in 2011. The goal was to create a better language than Java for the JVM, one that would be concise, safe, and interoperable with Java. Kotlin was declared the official language for Android development in 2017, replacing Java as the preferred choice. This historic decision by Google came after Kotlin offered a significantly better experience for Android developers.",
+            "Kotlin offers high safety by eliminating null pointer exceptions - one of the most common errors in Java. The language includes modern features like data classes, sealed classes, coroutines for asynchronous programming, and extension functions. Kotlin is 100% interoperable with Java, allowing use of all existing Java libraries. Besides Android, Kotlin is also used for backend development with Ktor and Spring Boot, and for multiplatform development (sharing code between Android and iOS)."
+          ],
+          "features": [
+            "Null safety: eliminates NullPointerException at language level",
+            "Concise: about 40% less code than Java for the same functionality",
+            "Coroutines for easy and safe asynchronous programming",
+            "100% interoperable with Java and its ecosystem",
+            "Multiplatform: share code between Android, iOS, Web, and Desktop"
+          ],
+          "usage": "Android, Web Backend (Ktor, Spring Boot), Multiplatform, Desktop"
+        }
       },
-      "en": {
-        "description": "Kotlin is a modern and concise programming language that runs on the Java Virtual Machine (JVM). Created by JetBrains (the company behind IntelliJ IDEA), Kotlin became the official language for Android development in 2017, replacing Java as the preferred choice. Kotlin offers cleaner syntax, higher safety (by eliminating null pointer exceptions), and full interoperability with Java. It is also used for backend development with Ktor and Spring Boot.",
-        "usage": "Android, Web Backend (Ktor, Spring), Multiplatform, Desktop",
-        "example": "fun main() {\n  println(\"Hello, World!\")\n  \n  print(\"Your name: \")\n  val name = readln()\n  println(\"Welcome, $name!\")\n  \n  // Null safety\n  var text: String? = null\n  println(text?.length ?: \"Text is null\")\n}",
-        "funFact": "Kotlin was named after Kotlin Island in Russia, near Saint Petersburg, where JetBrains has a development lab. Another JetBrains language is called 'Minsk'!"
+      "page2": {
+        "sq": {
+          "title": "Kotlin - Kuriozitete dhe Detaje Teknike",
+          "funFacts": [
+            "Kotlin u emërua pas ishullit Kotlin në Rusi, afër Shën Petersburgut, ku JetBrains ka një laborator zhvillimi. Gjithashtu, një tjetër gjuhë e JetBrains quhet 'Minsk' sipas kryeqytetit të Bjellorusisë.",
+            "Adoptimi i Kotlin në Android ishte aq i shpejtë sa që Google e bëri atë gjuhën e parë për Android në vetëm 2 vjet pas mbështetjes zyrtare. Mbi 60% e aplikacioneve më të mira në Play Store janë shkruar në Kotlin."
+          ],
+          "companies": "Google, Amazon, Uber, Trello, Slack, Pinterest, Square, Evernote, Coursera, Duolingo",
+          "pros": [
+            "Null safety kursen orë të tëra debuggimi duke eliminuar NPE-të",
+            "Kod shumë më konciz dhe i lexueshëm se Java",
+            "Coroutines e bëjnë programimin asinkron të thjeshtë dhe intuitiv",
+            "Interoperabilitet total me kodin ekzistues Java"
+          ],
+          "cons": [
+            "Kohë më e ngadaltë kompilimi se Java në disa raste",
+            "Ekosistem më i vogël se Java, veçanërisht për backend",
+            "Versionet e reja ndonjëherë thyejnë backward compatibility",
+            "Mësimi i coroutines dhe flow kërkon kohë"
+          ],
+          "example": "// Shembull Kotlin\nfun main() {\n    println(\"Hello, World!\")\n    \n    // Null safety\n    var name: String? = null\n    println(name?.length ?: \"Name eshte null\")\n    \n    // Faktorial\n    fun factorial(n: Int): Int = if (n <= 1) 1 else n * factorial(n - 1)\n    println(\"Faktoriali i 5 eshte: ${factorial(5)}\")\n    \n    // Collections\n    val numrat = listOf(1, 2, 3, 4, 5)\n    val katror = numrat.map { it * it }\n    println(\"Katroret: $katror\")\n}"
+        },
+        "en": {
+          "title": "Kotlin - Trivia and Technical Details",
+          "funFacts": [
+            "Kotlin was named after Kotlin Island in Russia, near Saint Petersburg, where JetBrains has a development lab. Another JetBrains language is called 'Minsk' after the capital of Belarus.",
+            "Kotlin adoption on Android was so fast that Google made it the first language for Android in just 2 years after official support. Over 60% of top apps on the Play Store are written in Kotlin."
+          ],
+          "companies": "Google, Amazon, Uber, Trello, Slack, Pinterest, Square, Evernote, Coursera, Duolingo",
+          "pros": [
+            "Null safety saves hours of debugging by eliminating NPEs",
+            "Much more concise and readable code than Java",
+            "Coroutines make asynchronous programming simple and intuitive",
+            "Total interoperability with existing Java code"
+          ],
+          "cons": [
+            "Slower compilation time than Java in some cases",
+            "Smaller ecosystem than Java, especially for backend",
+            "New versions sometimes break backward compatibility",
+            "Learning coroutines and flow takes time"
+          ],
+          "example": "// Kotlin example\nfun main() {\n    println(\"Hello, World!\")\n    \n    // Null safety\n    var name: String? = null\n    println(name?.length ?: \"Name is null\")\n    \n    // Factorial\n    fun factorial(n: Int): Int = if (n <= 1) 1 else n * factorial(n - 1)\n    println(\"Factorial of 5 is: ${factorial(5)}\")\n    \n    // Collections\n    val numbers = listOf(1, 2, 3, 4, 5)\n    val squares = numbers.map { it * it }\n    println(\"Squares: $squares\")\n}"
+        }
       }
     },
     {
@@ -221,17 +926,81 @@
       "name": "Swift",
       "category": "Backend",
       "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg",
-      "sq": {
-        "description": "Swift është gjuha moderne e Apple për zhvillimin e aplikacioneve në të gjitha platformat e saj: iOS, iPadOS, macOS, watchOS dhe tvOS. E prezantuar në vitin 2014 nga Chris Lattner, Swift u krijua për të zëvendësuar Objective-C, duke ofruar një sintaksë më moderne dhe të sigurt. Swift kombinon shpejtësinë e gjuhëve të kompiluara me lehtësinë e përdorimit të gjuhëve skriptuese. SwiftUI, framework-u i ri i ndërfaqes së përdoruesit, ka bërë që zhvillimi në Swift të jetë më i shpejtë dhe më deklarativ se kurrë më parë.",
-        "usage": "iOS/macOS (SwiftUI), Backend (Vapor), Cross-platform",
-        "example": "print(\"Hello, World!\")\n\nprint(\"Emri juaj: \", terminator: \"\")\nlet emri = readLine()!\nprint(\"Miresevini, \\(emri)!\")\n\n// Funksion\nfunc mbledh(a: Int, b: Int) -> Int {\n  return a + b\n}\nprint(\"Shuma: \\(mbledh(a: 10, b: 5))\")",
-        "funFact": "Chris Lattner krioi Swift gjatë kohës së tij të lirë në Apple, para se të bëhej një projekt zyrtar. Ai gjithashtu krijoi LLVM, një infrastrukturë kompilimi që përdoret nga shumë gjuhë sot."
+      "page1": {
+        "sq": {
+          "title": "Swift - E Ardhmja e Apple",
+          "paragraphs": [
+            "Swift u krijua nga Chris Lattner në Apple në vitin 2014. Lattner, i cili më parë kishte krijuar LLVM (një nga infrastrukturat më të rëndësishme të kompilimit), filloi Swift-in si një projekt personal gjatë kohës së tij të lirë. Swift u projektua për të zëvendësuar Objective-C, një gjuhë 30-vjeçare që ishte bërë e vjetër dhe e vështirë për t'u përdorur. Swift kombinon shpejtësinë e gjuhëve të kompiluara me lehtësinë e përdorimit të gjuhëve moderne.",
+            "Swift ka pësuar një adoptim të shpejtë në komunitetin e zhvilluesve të Apple. SwiftUI, framework-u i ri i ndërfaqes së përdoruesit, ka bërë që zhvillimi i aplikacioneve në Swift të jetë më i shpejtë dhe më deklarativ. Swift përdoret për të gjitha platformat e Apple: iOS, iPadOS, macOS, watchOS dhe tvOS. Gjithashtu, Swift po përdoret gjithnjë e më shumë për backend me framework-un Vapor, dhe madje edhe për cloud computing."
+          ],
+          "features": [
+            "Shpejtësi e lartë: performancë e krahasueshme me C dhe C++",
+            "Safety: eliminon gabimet e zakonshme përmes optionals dhe type inference",
+            "Sintaksë moderne dhe e pastër, e lehtë për t'u lexuar",
+            "SwiftUI: ndërtim i shpejtë i ndërfaqeve me kod deklarativ",
+            "Playgrounds: mjedis interaktiv për të mësuar dhe eksperimentuar"
+          ],
+          "usage": "iOS/macOS (SwiftUI), Backend (Vapor), Cross-platform, Cloud"
+        },
+        "en": {
+          "title": "Swift - The Future of Apple",
+          "paragraphs": [
+            "Swift was created by Chris Lattner at Apple in 2014. Lattner, who had previously created LLVM (one of the most important compiler infrastructures), started Swift as a personal project during his spare time. Swift was designed to replace Objective-C, a 30-year-old language that had become old and difficult to use. Swift combines the speed of compiled languages with the ease of use of modern languages.",
+            "Swift has seen rapid adoption in the Apple developer community. SwiftUI, the new user interface framework, has made Swift application development faster and more declarative. Swift is used for all Apple platforms: iOS, iPadOS, macOS, watchOS, and tvOS. Swift is also increasingly used for backend development with the Vapor framework, and even for cloud computing."
+          ],
+          "features": [
+            "High speed: performance comparable to C and C++",
+            "Safety: eliminates common errors through optionals and type inference",
+            "Modern and clean syntax, easy to read",
+            "SwiftUI: fast UI construction with declarative code",
+            "Playgrounds: interactive environment for learning and experimenting"
+          ],
+          "usage": "iOS/macOS (SwiftUI), Backend (Vapor), Cross-platform, Cloud"
+        }
       },
-      "en": {
-        "description": "Swift is Apple's modern language for developing applications across all its platforms: iOS, iPadOS, macOS, watchOS, and tvOS. Introduced in 2014 by Chris Lattner, Swift was created to replace Objective-C, offering a more modern and safer syntax. Swift combines the speed of compiled languages with the ease of use of scripting languages. SwiftUI, the new user interface framework, has made Swift development faster and more declarative than ever before.",
-        "usage": "iOS/macOS (SwiftUI), Backend (Vapor), Cross-platform",
-        "example": "print(\"Hello, World!\")\n\nprint(\"Your name: \", terminator: \"\")\nlet name = readLine()!\nprint(\"Welcome, \\(name)!\")\n\n// Function\nfunc add(a: Int, b: Int) -> Int {\n  return a + b\n}\nprint(\"Sum: \\(add(a: 10, b: 5))\")",
-        "funFact": "Chris Lattner created Swift during his spare time at Apple, before it became an official project. He also created LLVM, a compiler infrastructure used by many languages today."
+      "page2": {
+        "sq": {
+          "title": "Swift - Kuriozitete dhe Detaje Teknike",
+          "funFacts": [
+            "Chris Lattner krijoi Swift gjatë kohës së tij të lirë në Apple, para se të bëhej një projekt zyrtar. Pasi u largua nga Apple, Lattner punoi në Tesla, Google (ku krijoi AI framework-un MLIR), dhe tani punon në projekte të AI.",
+            "Swift Playgrounds është një aplikacion iPad që mëson fëmijët dhe fillestarët të programojnë në Swift përmes lojërave dhe puzzles interaktive. Është një nga mënyrat më të mira për të filluar mësimin e programimit."
+          ],
+          "companies": "Apple, Uber, Lyft, Airbnb, LinkedIn, Slack, WhatsApp (Meta), Twitter/X, SoundCloud, Khan Academy",
+          "pros": [
+            "Shpejtësi e nivelit C/C++ me sintaksë të nivelit Python",
+            "Siguri e lartë falë ARC (Automatic Reference Counting) dhe optionals",
+            "SwiftUI e bën zhvillimin e UI më të shpejtë se kurrë",
+            "Komunitet në rritje të shpejtë dhe mbështetje e fortë nga Apple"
+          ],
+          "cons": [
+            "Përdoret kryesisht vetëm në ekosistemin Apple",
+            "Versionet e reja thyejnë shpesh backward compatibility",
+            "Më pak biblioteka dhe burime se gjuhët më të vjetra",
+            "Tooling (Xcode) është i kufizuar në macOS"
+          ],
+          "example": "// Shembull Swift\nimport Foundation\n\nprint(\"Hello, World!\")\n\n// Faktorial\nfunc factorial(_ n: Int) -> Int {\n    return n <= 1 ? 1 : n * factorial(n - 1)\n}\n\nlet n = 5\nprint(\"Faktoriali i \\(n) eshte: \\(factorial(n))\")\n\n// Higher-order functions\nlet numrat = [1, 2, 3, 4, 5]\nlet katror = numrat.map { $0 * $0 }\nprint(\"Katroret: \\(katror)\")"
+        },
+        "en": {
+          "title": "Swift - Trivia and Technical Details",
+          "funFacts": [
+            "Chris Lattner created Swift during his spare time at Apple, before it became an official project. After leaving Apple, Lattner worked at Tesla, Google (where he created the MLIR AI framework), and now works on AI projects.",
+            "Swift Playgrounds is an iPad application that teaches children and beginners to program in Swift through games and interactive puzzles. It's one of the best ways to start learning programming."
+          ],
+          "companies": "Apple, Uber, Lyft, Airbnb, LinkedIn, Slack, WhatsApp (Meta), Twitter/X, SoundCloud, Khan Academy",
+          "pros": [
+            "C/C++ level speed with Python-level syntax",
+            "High safety thanks to ARC (Automatic Reference Counting) and optionals",
+            "SwiftUI makes UI development faster than ever",
+            "Rapidly growing community and strong Apple support"
+          ],
+          "cons": [
+            "Used mainly only in the Apple ecosystem",
+            "New versions often break backward compatibility",
+            "Fewer libraries and resources than older languages",
+            "Tooling (Xcode) is limited to macOS"
+          ],
+          "example": "// Swift example\nimport Foundation\n\nprint(\"Hello, World!\")\n\n// Factorial\nfunc factorial(_ n: Int) -> Int {\n    return n <= 1 ? 1 : n * factorial(n - 1)\n}\n\nlet n = 5\nprint(\"Factorial of \\(n) is: \\(factorial(n))\")\n\n// Higher-order functions\nlet numbers = [1, 2, 3, 4, 5]\nlet squares = numbers.map { $0 * $0 }\nprint(\"Squares: \\(squares)\")"
+        }
       }
     },
     {
@@ -239,17 +1008,81 @@
       "name": "Dart",
       "category": "Frontend",
       "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg",
-      "sq": {
-        "description": "Dart është gjuha programuese e Flutter-it, e krijuar nga Google si një alternativë moderne për zhvillimin e aplikacioneve në platforma të shumëfishta. Dart u shfaq për herë të parë në vitin 2011, por mori famë të madhe me lançimin e Flutter në 2017. Ajo që e bën Dart unik është aftësia për të kompiluar si në kodin native (për performancë maksimale në mobile dhe desktop) ashtu edhe në JavaScript (për web). Flutter përdoret nga Google, Alibaba, BMW dhe shumë kompani të tjera për të ndërtuar aplikacione të bukura dhe të shpejta.",
-        "usage": "Mobile (Flutter), Web (Flutter Web), Desktop, Embedded",
-        "example": "void main() {\n  print('Hello, World!');\n  \n  print('Emri juaj: ');\n  var emri = 'Ardian';\n  print('Miresevini, $emri!');\n  \n  // List\n  var numrat = [1, 2, 3, 4, 5];\n  var shuma = numrat.reduce((a, b) => a + b);\n  print('Shuma: $shuma');\n}",
-        "funFact": "Dart u krijua nga ekipi i Lars Bak dhe Kasper Lund, të njëjtët inxhinierë që krijuan V8 JavaScript engine të Google Chrome dhe Java HotSpot VM."
+      "page1": {
+        "sq": {
+          "title": "Dart - Gjuha e Flutter-it",
+          "paragraphs": [
+            "Dart u krijua nga Google në vitin 2011, nga ekipi i Lars Bak dhe Kasper Lund - të njëjtët inxhinierë që krijuan V8 JavaScript engine të Google Chrome dhe Java HotSpot VM. Dart u projektua për të qenë një alternativë më e mirë se JavaScript për zhvillimin e aplikacioneve web komplekse. Megjithatë, Dart nuk arriti popullaritet deri në vitin 2017, kur Google lançoi Flutter, një framework revolucionar për aplikacione mobile.",
+            "Flutter përdor Dart-in si gjuhën e tij kryesore dhe ka transformuar plotësisht fatin e gjuhës. Ajo që e bën Dart unik është aftësia për të kompiluar në kod native ARM (për performancë maksimale në mobile dhe desktop) dhe në JavaScript (për web). Flutter përdoret nga Google (Google Pay), Alibaba, BMW, Toyota dhe shumë kompani të tjera. Dart ofron JIT compilation për hot reload gjatë zhvillimit dhe AOT compilation për performancë maksimale në production."
+          ],
+          "features": [
+            "Kompilim i dyfishtë: native (ARM) për mobile/desktop dhe JavaScript për web",
+            "Hot Reload: ndryshimet në kod shfaqen në çast pa rindezur aplikacionin",
+            "Sound null safety: sistem tipe që eliminon null gabimet në kohë kompilimi",
+            "Widget-based: Flutter përdor widgets për çdo element të UI",
+            "E shpejtë: performancë 60fps konstante në mobile dhe desktop"
+          ],
+          "usage": "Mobile (Flutter), Web (Flutter Web), Desktop, Embedded (Google Fuchsia)"
+        },
+        "en": {
+          "title": "Dart - The Language of Flutter",
+          "paragraphs": [
+            "Dart was created by Google in 2011, by the team of Lars Bak and Kasper Lund - the same engineers who created Google Chrome's V8 JavaScript engine and the Java HotSpot VM. Dart was designed to be a better alternative to JavaScript for building complex web applications. However, Dart didn't achieve popularity until 2017, when Google launched Flutter, a revolutionary framework for mobile applications.",
+            "Flutter uses Dart as its primary language and has completely transformed the language's fate. What makes Dart unique is its ability to compile to native ARM code (for maximum performance on mobile and desktop) and to JavaScript (for the web). Flutter is used by Google (Google Pay), Alibaba, BMW, Toyota, and many other companies. Dart offers JIT compilation for hot reload during development and AOT compilation for maximum performance in production."
+          ],
+          "features": [
+            "Dual compilation: native (ARM) for mobile/desktop and JavaScript for web",
+            "Hot Reload: changes appear instantly without restarting the app",
+            "Sound null safety: type system eliminating null errors at compile time",
+            "Widget-based: Flutter uses widgets for every UI element",
+            "Fast: consistent 60fps performance on mobile and desktop"
+          ],
+          "usage": "Mobile (Flutter), Web (Flutter Web), Desktop, Embedded (Google Fuchsia)"
+        }
       },
-      "en": {
-        "description": "Dart is the programming language of Flutter, created by Google as a modern alternative for developing applications across multiple platforms. Dart first appeared in 2011 but gained massive popularity with the launch of Flutter in 2017. What makes Dart unique is its ability to compile both to native code (for maximum performance on mobile and desktop) and to JavaScript (for the web). Flutter is used by Google, Alibaba, BMW, and many other companies to build beautiful and fast applications.",
-        "usage": "Mobile (Flutter), Web (Flutter Web), Desktop, Embedded",
-        "example": "void main() {\n  print('Hello, World!');\n  \n  print('Your name: ');\n  var name = 'John';\n  print('Welcome, $name!');\n  \n  // List\n  var numbers = [1, 2, 3, 4, 5];\n  var sum = numbers.reduce((a, b) => a + b);\n  print('Sum: $sum');\n}",
-        "funFact": "Dart was created by the team of Lars Bak and Kasper Lund, the same engineers who created Google Chrome's V8 JavaScript engine and the Java HotSpot VM."
+      "page2": {
+        "sq": {
+          "title": "Dart - Kuriozitete dhe Detaje Teknike",
+          "funFacts": [
+            "Flutter dikur quhej 'Sky' dhe funksiononte vetëm në Android. Emri u ndryshua në Flutter dhe tani mbështet të gjitha platformat kryesore. Motori i Flutter-it është shkruar në C++ dhe përdor Skia, të njëjtin motor grafik që përdor Google Chrome.",
+            "Dart mund të përdoret edhe për aplikacione në server. Framework-u Angel dhe Shelf mundësojnë ndërtimin e backend-ve në Dart. Dart po përdoret gjithashtu si gjuha kryesore për Google Fuchsia, sistemin operativ të ri të Google."
+          ],
+          "companies": "Google, Alibaba, BMW, Toyota, Tencent, eBay, Groupon, Square, Philips, Nutanix",
+          "pros": [
+            "Nje kod, tre platforma: mobile, web dhe desktop me te njejtin codebase",
+            "Hot Reload i shpejton zhvillimin ne menyre drastike",
+            "Performancë e lartë falë kompilimit AOT në kod native",
+            "Dokumentacion i shkelqyer nga Google"
+          ],
+          "cons": [
+            "Ekosistem i vogel krahasuar me React Native ose JavaScript",
+            "Aplikacionet Flutter kane madhesi me te madhe se ato native",
+            "Gjuhe relativisht e re me burime te kufizuara mesimore",
+            "Integrim me platforma native kerkon punë shtesë"
+          ],
+          "example": "// Shembull Dart\nvoid main() {\n  print('Hello, World!');\n  \n  // Null safety\n  String? name;\n  print(name ?? 'Name eshte null');\n  \n  // Faktorial\n  int factorial(int n) => n <= 1 ? 1 : n * factorial(n - 1);\n  print('Faktoriali i 5 eshte: ${factorial(5)}');\n  \n  // Collections\n  var numrat = [1, 2, 3, 4, 5];\n  var katror = numrat.map((x) => x * x).toList();\n  print('Katroret: $katror');\n}"
+        },
+        "en": {
+          "title": "Dart - Trivia and Technical Details",
+          "funFacts": [
+            "Flutter was originally called 'Sky' and only worked on Android. The name was changed to Flutter and now supports all major platforms. Flutter's engine is written in C++ and uses Skia, the same graphics engine used by Google Chrome.",
+            "Dart can also be used for server applications. The Angel and Shelf frameworks enable building backends in Dart. Dart is also being used as the primary language for Google Fuchsia, Google's new operating system."
+          ],
+          "companies": "Google, Alibaba, BMW, Toyota, Tencent, eBay, Groupon, Square, Philips, Nutanix",
+          "pros": [
+            "One code, three platforms: mobile, web, and desktop with the same codebase",
+            "Hot Reload dramatically speeds up development",
+            "High performance thanks to AOT compilation to native code",
+            "Excellent documentation from Google"
+          ],
+          "cons": [
+            "Small ecosystem compared to React Native or JavaScript",
+            "Flutter apps have larger size than native ones",
+            "Relatively new language with limited learning resources",
+            "Native platform integration requires extra work"
+          ],
+          "example": "// Dart example\nvoid main() {\n  print('Hello, World!');\n  \n  // Null safety\n  String? name;\n  print(name ?? 'Name is null');\n  \n  // Factorial\n  int factorial(int n) => n <= 1 ? 1 : n * factorial(n - 1);\n  print('Factorial of 5 is: ${factorial(5)}');\n  \n  // Collections\n  var numbers = [1, 2, 3, 4, 5];\n  var squares = numbers.map((x) => x * x).toList();\n  print('Squares: $squares');\n}"
+        }
       }
     },
     {
@@ -257,17 +1090,81 @@
       "name": "Scala",
       "category": "Backend",
       "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scala/scala-original.svg",
-      "sq": {
-        "description": "Scala (Scalable Language) është një gjuhë programimi që kombinon më të mirën e programimit të orientuar në objekte dhe atij funksional. Krijuar nga Martin Odersky në vitin 2004, Scala ekzekutohet në JVM dhe ndërvepron plotësisht me Java-n, duke i lejuar zhvilluesit të përdorin bibliotekat ekzistuese të Java-s ndërsa shkruajnë kod më konciz dhe më të sigurt. Scala është gjuha kryesore pas Apache Spark, framework-u më i popullarizuar për përpunimin e të dhënave në shkallë të gjerë, dhe përdoret nga Twitter, LinkedIn dhe Netflix.",
-        "usage": "Big Data (Apache Spark), Web Backend (Play), Data Engineering, Machine Learning",
-        "example": "object Hello {\n  def main(args: Array[String]): Unit = {\n    println(\"Hello, World!\")\n    \n    val emri = \"Ardian\"\n    println(s\"Miresevini, $emri!\")\n    \n    // Functional\n    val numrat = List(1, 2, 3, 4, 5)\n    val shuma = numrat.reduce(_ + _)\n    println(s\"Shuma: $shuma\")\n  }\n}",
-        "funFact": "Martin Odersky, krijuesi i Scala-s, gjithashtu shkroi kompajlerin origjinal të Java-s (javac). Scala do të thotë 'Scalable Language' sepse është projektuar për t'u rritur me nevojat e përdoruesit."
+      "page1": {
+        "sq": {
+          "title": "Scala - OOP dhe Funksional",
+          "paragraphs": [
+            "Scala (Scalable Language) u krijua nga Martin Odersky në vitin 2004. Odersky është një figurë legjendare në botën e programimit - ai shkroti kompajlerin origjinal të Java-s (javac) dhe ishte arkitekti kryesor i generics në Java 5. Me Scala, Odersky donte të krijonte një gjuhë që kombinonte më të mirën e programimit të orientuar në objekte dhe atij funksional, duke ofruar një shkallëzueshmëri që Java nuk mund ta ofronte.",
+            "Scala ekzekutohet në JVM dhe është 100% interoperabile me Java-n, duke lejuar përdorimin e të gjitha bibliotekave ekzistuese Java. Scala është gjuha kryesore prapa Apache Spark, framework-u më i popullarizuar për përpunimin e të dhënave në shkallë të gjerë. Scala përdoret nga Twitter, LinkedIn, Netflix dhe shumë kompani të tjera për aplikacione që kërkojnë shkallëzueshmëri dhe besueshmëri. Veçoritë kryesore përfshijnë pattern matching, immutable collections, dhe monads për programim funksional."
+          ],
+          "features": [
+            "Funksional + OOP: kombinon dy paradigmat më të rëndësishme të programimit",
+            "Pattern matching i fuqishëm për kod të pastër dhe të sigurt",
+            "Immutability: strukturat e të dhënave të pandryshueshme për kod më të sigurt",
+            "Apache Spark: framework-u më i popullarizuar Big Data është në Scala",
+            "100% interoperabil me Java-n dhe ekosistemin e saj"
+          ],
+          "usage": "Big Data (Apache Spark), Web Backend (Play, Akka), Data Engineering, ML"
+        },
+        "en": {
+          "title": "Scala - OOP and Functional",
+          "paragraphs": [
+            "Scala (Scalable Language) was created by Martin Odersky in 2004. Odersky is a legendary figure in the programming world - he wrote the original Java compiler (javac) and was the lead architect of generics in Java 5. With Scala, Odersky wanted to create a language that combined the best of object-oriented and functional programming, offering a scalability that Java could not provide.",
+            "Scala runs on the JVM and is 100% interoperable with Java, allowing use of all existing Java libraries. Scala is the primary language behind Apache Spark, the most popular framework for large-scale data processing. Scala is used by Twitter, LinkedIn, Netflix, and many other companies for applications requiring scalability and reliability. Key features include pattern matching, immutable collections, and monads for functional programming."
+          ],
+          "features": [
+            "Functional + OOP: combines the two most important programming paradigms",
+            "Powerful pattern matching for clean and safe code",
+            "Immutability: immutable data structures for safer code",
+            "Apache Spark: the most popular Big Data framework is in Scala",
+            "100% interoperable with Java and its ecosystem"
+          ],
+          "usage": "Big Data (Apache Spark), Web Backend (Play, Akka), Data Engineering, ML"
+        }
       },
-      "en": {
-        "description": "Scala (Scalable Language) is a programming language that combines the best of object-oriented and functional programming. Created by Martin Odersky in 2004, Scala runs on the JVM and fully interoperates with Java, allowing developers to use existing Java libraries while writing more concise and safer code. Scala is the primary language behind Apache Spark, the most popular framework for large-scale data processing, and is used by Twitter, LinkedIn, and Netflix.",
-        "usage": "Big Data (Apache Spark), Web Backend (Play), Data Engineering, Machine Learning",
-        "example": "object Hello {\n  def main(args: Array[String]): Unit = {\n    println(\"Hello, World!\")\n    \n    val name = \"John\"\n    println(s\"Welcome, $name!\")\n    \n    // Functional\n    val numbers = List(1, 2, 3, 4, 5)\n    val sum = numbers.reduce(_ + _)\n    println(s\"Sum: $sum\")\n  }\n}",
-        "funFact": "Martin Odersky, the creator of Scala, also wrote the original Java compiler (javac). Scala means 'Scalable Language' because it is designed to grow with the user's needs."
+      "page2": {
+        "sq": {
+          "title": "Scala - Kuriozitete dhe Detaje Teknike",
+          "funFacts": [
+            "Martin Odersky, krijuesi i Scala-s, shkroti gjithashtu kompajlerin origjinal të Java-s (javac) dhe kontribuoi në dizajnimin e generics në Java 5. Ai është profesor në ETH Zurich dhe drejton laboratorin LAMP (Laboratory for Programming Methods).",
+            "Scala përdoret nga Twitter për infrastrukturën e tyre backend. Twitter kaloi nga Ruby on Rails në Scala për të trajtuar volumin e madh të tweet-eve. Finagle, biblioteka e rrjeteve e Twitter-it, është shkruar në Scala."
+          ],
+          "companies": "Twitter/X, LinkedIn, Netflix, Apple, Spotify, The Guardian, Sony, Siemens, Zalando, Verizon",
+          "pros": [
+            "Fuqi e jashtëzakonshme për përpunimin e të dhënave të mëdha përmes Apache Spark",
+            "Kod më konciz dhe më i sigurt se Java falë veçorive funksionale",
+            "Akka: framework i fuqishëm për sisteme të shpërndara dhe konkurente",
+            "Interoperabilitet i plotë me ekosistemin e pasur të Java-s"
+          ],
+          "cons": [
+            "Kompilim i ngadaltë krahasuar me gjuhët e tjera JVM",
+            "Kompleksitet i lartë për shkak të kombinimit të paradigmave",
+            "Kurbë e lartë mësimi edhe për programues me përvojë",
+            "Komunitet më i vogël se Java ose Python"
+          ],
+          "example": "// Shembull Scala\nobject Hello {\n  def main(args: Array[String]): Unit = {\n    println(\"Hello, World!\")\n    \n    // Faktorial\n    def factorial(n: Int): Int = n match {\n      case 0 | 1 => 1\n      case _ => n * factorial(n - 1)\n    }\n    \n    println(s\"Faktoriali i 5 eshte: ${factorial(5)}\")\n    \n    // Collections funksionale\n    val numrat = List(1, 2, 3, 4, 5)\n    val katror = numrat.map(_ * _)\n    println(s\"Katroret: $katror\")\n  }\n}"
+        },
+        "en": {
+          "title": "Scala - Trivia and Technical Details",
+          "funFacts": [
+            "Martin Odersky, the creator of Scala, also wrote the original Java compiler (javac) and contributed to the design of generics in Java 5. He is a professor at ETH Zurich and leads the LAMP laboratory (Laboratory for Programming Methods).",
+            "Scala is used by Twitter for their backend infrastructure. Twitter moved from Ruby on Rails to Scala to handle the massive volume of tweets. Finagle, Twitter's networking library, is written in Scala."
+          ],
+          "companies": "Twitter/X, LinkedIn, Netflix, Apple, Spotify, The Guardian, Sony, Siemens, Zalando, Verizon",
+          "pros": [
+            "Extraordinary power for big data processing through Apache Spark",
+            "More concise and safer code than Java thanks to functional features",
+            "Akka: powerful framework for distributed and concurrent systems",
+            "Full interoperability with Java's rich ecosystem"
+          ],
+          "cons": [
+            "Slow compilation compared to other JVM languages",
+            "High complexity due to paradigm combination",
+            "Steep learning curve even for experienced programmers",
+            "Smaller community than Java or Python"
+          ],
+          "example": "// Scala example\nobject Hello {\n  def main(args: Array[String]): Unit = {\n    println(\"Hello, World!\")\n    \n    // Factorial with pattern matching\n    def factorial(n: Int): Int = n match {\n      case 0 | 1 => 1\n      case _ => n * factorial(n - 1)\n    }\n    \n    println(s\"Factorial of 5 is: ${factorial(5)}\")\n    \n    // Functional collections\n    val numbers = List(1, 2, 3, 4, 5)\n    val squares = numbers.map(_ * _)\n    println(s\"Squares: $squares\")\n  }\n}"
+        }
       }
     },
     {
@@ -275,18 +1172,176 @@
       "name": "Elixir",
       "category": "Backend",
       "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/elixir/elixir-original.svg",
-      "sq": {
-        "description": "Elixir është një gjuhë programimi funksionale, moderne dhe e fuqishme, e ndërtuar mbi Erlang VM (BEAM). Krijuar nga José Valim në vitin 2011, Elixir trashëgoi nga Erlang aftësitë e jashtëzakonshme për konkurencë dhe tolerancë ndaj gabimeve, duke shtuar një sintaksë moderne dhe mjete të fuqishme si framework-u Phoenix. Ajo që e bën Elixir unik është aftësia për të trajtuar miliona lidhje njëkohësisht me burime minimale, duke e bërë atë ideal për aplikacione real-time, sisteme të shpërndara dhe IoT. Discord, Bleacher Report dhe Financial Times përdorin Elixir.",
-        "usage": "Web Backend (Phoenix), Real-time, IoT, Sisteme të shpërndara, Chat",
-        "example": "IO.puts(\"Hello, World!\")\n\nemri = IO.gets(\"Emri juaj: \") |> String.trim()\nIO.puts(\"Miresevini, #{emri}!\")\n\n# Pattern matching\n[head | tail] = [1, 2, 3, 4]\nIO.puts(\"Elementi i pare: #{head}\")",
-        "funFact": "Elixir u krijua nga José Valim, një programues brazilian që donte të kombinonte fuqinë e Erlang VM me produktivitetin e Ruby-t. BEAM VM mund të ekzekutohet pa u rindezur për vite të tëra!"
+      "page1": {
+        "sq": {
+          "title": "Elixir - Konkurenca dhe Besueshmeria",
+          "paragraphs": [
+            "Elixir u krijua nga José Valim, një programues brazilian, në vitin 2011. Valim ishte një zhvillues Ruby on Rails dhe donte të krijonte një gjuhë që kombinonte produktivitetin e Ruby-t me fuqinë dhe besueshmërinë e Erlang VM (BEAM). Elixir trashëgoi nga Erlang aftësitë e jashtëzakonshme për konkurencë dhe tolerancë ndaj gabimeve, duke shtuar një sintaksë moderne, protokolle dhe metaprogramim të fuqishëm përmes macros.",
+            "Ajo që e bën Elixir unik është aftësia për të trajtuar miliona lidhje njëkohësisht me burime minimale. BEAM VM (Virtual Machine) përdor lightweight processes që janë jashtëzakonisht të lehtë dhe të izoluar. Framework-u Phoenix e ka bërë Elixir-in një zgjedhje të shkëlqyer për aplikacione real-time si chat, lojëra, dhe sisteme të shpërndara. Discord, Bleacher Report dhe Financial Times përdorin Elixir për aplikacionet e tyre real-time."
+          ],
+          "features": [
+            "Konkurencë masive: miliona processes të lehta në një makinë të vetme",
+            "Tolerancë ndaj gabimeve: sisteme që vetë-shërohen pas dështimeve",
+            "Phoenix LiveView: aplikacione real-time pa shkruar JavaScript",
+            "Pattern matching në çdo nivel të gjuhës",
+            "Metaprogramim përmes macros për DSL të fuqishme"
+          ],
+          "usage": "Web Backend (Phoenix), Real-time, IoT, Sisteme të shpërndara, Chat, Lojra"
+        },
+        "en": {
+          "title": "Elixir - Concurrency and Reliability",
+          "paragraphs": [
+            "Elixir was created by José Valim, a Brazilian programmer, in 2011. Valim was a Ruby on Rails developer and wanted to create a language that combined Ruby's productivity with the power and reliability of the Erlang VM (BEAM). Elixir inherited from Erlang its exceptional capabilities for concurrency and fault tolerance, while adding modern syntax, protocols, and powerful metaprogramming through macros.",
+            "What makes Elixir unique is its ability to handle millions of simultaneous connections with minimal resources. The BEAM VM uses lightweight processes that are extremely lightweight and isolated. The Phoenix framework has made Elixir an excellent choice for real-time applications like chat, games, and distributed systems. Discord, Bleacher Report, and Financial Times use Elixir for their real-time applications."
+          ],
+          "features": [
+            "Massive concurrency: millions of lightweight processes on a single machine",
+            "Fault tolerance: systems that self-heal after failures",
+            "Phoenix LiveView: real-time applications without writing JavaScript",
+            "Pattern matching at every level of the language",
+            "Metaprogramming through macros for powerful DSLs"
+          ],
+          "usage": "Web Backend (Phoenix), Real-time, IoT, Distributed systems, Chat, Games"
+        }
       },
-      "en": {
-        "description": "Elixir is a modern, powerful functional programming language built on top of the Erlang VM (BEAM). Created by José Valim in 2011, Elixir inherited from Erlang its exceptional capabilities for concurrency and fault tolerance, while adding a modern syntax and powerful tools like the Phoenix framework. What makes Elixir unique is its ability to handle millions of simultaneous connections with minimal resources, making it ideal for real-time applications, distributed systems, and IoT. Discord, Bleacher Report, and Financial Times use Elixir.",
-        "usage": "Web Backend (Phoenix), Real-time, IoT, Distributed systems, Chat",
-        "example": "IO.puts(\"Hello, World!\")\n\nname = IO.gets(\"Your name: \") |> String.trim()\nIO.puts(\"Welcome, #{name}!\")\n\n# Pattern matching\n[head | tail] = [1, 2, 3, 4]\nIO.puts(\"First element: #{head}\")",
-        "funFact": "Elixir was created by José Valim, a Brazilian programmer who wanted to combine the power of Erlang VM with the productivity of Ruby. The BEAM VM can run without restarting for years!"
+      "page2": {
+        "sq": {
+          "title": "Elixir - Kuriozitete dhe Detaje Teknike",
+          "funFacts": [
+            "BEAM VM, mbi të cilën është ndërtuar Elixir, është një nga makinat virtuale më të qëndrueshme në botë. Sistemet Erlang/Elixir në prodhim janë raportuar të kenë uptime prej vitesh pa u rindezur. Ericsson përdorte sisteme Erlang me 99.9999999% besueshmëri (vetëm 31 ms downtime në vit).",
+            "Discord, një nga aplikacionet më të mëdha të chat-it në botë, përdor Elixir për shërbimin e tij të mesazheve real-time. Ata trajtojnë miliona mesazhe në sekondë duke përdorur Elixir në BEAM VM."
+          ],
+          "companies": "Discord, Financial Times, Bleacher Report, Pinterest, Moz, Heroku, PepsiCo, Toyota, Apple",
+          "pros": [
+            "Konkurencë masive me processes te lehta dhe te izoluara",
+            "Tolerancë ndaj gabimeve: aplikacionet vazhdojne pune edhe pas deshtimeve",
+            "Phoenix LiveView ben te mundur aplikacione real-time pa JS kompleks",
+            "Produktivitet i larte falë sintakses se paster dhe dokumentacionit"
+          ],
+          "cons": [
+            "Komunitet dhe ekosistem relativisht i vogel",
+            "Kurbë e lartë mësimi për konceptet funksionale dhe BEAM",
+            "Performancë e ulët për llogaritje numerike intensive",
+            "Treg pune më i kufizuar se gjuhët kryesore"
+          ],
+          "example": "# Shembull Elixir\nIO.puts(\"Hello, World!\")\n\n# Faktorial\nfactorial = fn\n  0 -> 1\n  1 -> 1\n  n -> n * factorial.(n - 1)\nend\n\nIO.puts(\"Faktoriali i 5 eshte: #{factorial.(5)}\")\n\n# Pipeline operator\nresult = [1, 2, 3, 4, 5]\n  |> Enum.map(& &1 * &1)\n  |> Enum.filter(& &1 > 5)\n  |> Enum.sum()\n\nIO.puts(\"Rezultati: #{result}\")"
+        },
+        "en": {
+          "title": "Elixir - Trivia and Technical Details",
+          "funFacts": [
+            "The BEAM VM, on which Elixir is built, is one of the most stable virtual machines in the world. Erlang/Elixir systems in production have been reported to have uptimes of years without restart. Ericsson used Erlang systems with 99.9999999% reliability (only 31 ms downtime per year).",
+            "Discord, one of the largest chat applications in the world, uses Elixir for its real-time messaging service. They handle millions of messages per second using Elixir on the BEAM VM."
+          ],
+          "companies": "Discord, Financial Times, Bleacher Report, Pinterest, Moz, Heroku, PepsiCo, Toyota, Apple",
+          "pros": [
+            "Massive concurrency with lightweight and isolated processes",
+            "Fault tolerance: applications continue running even after failures",
+            "Phoenix LiveView enables real-time apps without complex JS",
+            "High productivity thanks to clean syntax and documentation"
+          ],
+          "cons": [
+            "Relatively small community and ecosystem",
+            "Steep learning curve for functional concepts and BEAM",
+            "Low performance for intensive numerical computation",
+            "More limited job market than mainstream languages"
+          ],
+          "example": "# Elixir example\nIO.puts(\"Hello, World!\")\n\n# Factorial\nfactorial = fn\n  0 -> 1\n  1 -> 1\n  n -> n * factorial.(n - 1)\nend\n\nIO.puts(\"Factorial of 5 is: #{factorial.(5)}\")\n\n# Pipeline operator\nresult = [1, 2, 3, 4, 5]\n  |> Enum.map(& &1 * &1)\n  |> Enum.filter(& &1 > 5)\n  |> Enum.sum()\n\nIO.puts(\"Result: #{result}\")"
+        }
       }
     }
-  ]
+  ],
+  "quiz": [
+    {
+      "sq": { "question": "Kush krijoi gjuhën e programimit Python?", "options": ["James Gosling", "Guido van Rossum", "Brendan Eich", "Bjarne Stroustrup"], "correct": 1 },
+      "en": { "question": "Who created the Python programming language?", "options": ["James Gosling", "Guido van Rossum", "Brendan Eich", "Bjarne Stroustrup"], "correct": 1 }
+    },
+    {
+      "sq": { "question": "Në sa ditë u krijua JavaScript?", "options": ["10 dite", "30 dite", "60 dite", "90 dite"], "correct": 0 },
+      "en": { "question": "In how many days was JavaScript created?", "options": ["10 days", "30 days", "60 days", "90 days"], "correct": 0 }
+    },
+    {
+      "sq": { "question": "Si quhej Java fillimisht para se të riemërohej?", "options": ["Pine", "Maple", "Oak", "Cedar"], "correct": 2 },
+      "en": { "question": "What was Java originally called before being renamed?", "options": ["Pine", "Maple", "Oak", "Cedar"], "correct": 2 }
+    },
+    {
+      "sq": { "question": "Kush krijoi C++?", "options": ["Dennis Ritchie", "Bjarne Stroustrup", "Brian Kernighan", "Ken Thompson"], "correct": 1 },
+      "en": { "question": "Who created C++?", "options": ["Dennis Ritchie", "Bjarne Stroustrup", "Brian Kernighan", "Ken Thompson"], "correct": 1 }
+    },
+    {
+      "sq": { "question": "Çfarë është LINQ në C#?", "options": ["Nje lloj i ri i te dhenash", "Nje gjuhe pyetjesh e integruar", "Nje framework web", "Nje ORM per databaza"], "correct": 1 },
+      "en": { "question": "What is LINQ in C#?", "options": ["A new data type", "A language integrated query", "A web framework", "An ORM for databases"], "correct": 1 }
+    },
+    {
+      "sq": { "question": "Cilat janë goroutines në Go?", "options": ["Thread-a te lehte", "Funksione rekursive", "Struktura te dhenash", "Modele dizajni"], "correct": 0 },
+      "en": { "question": "What are goroutines in Go?", "options": ["Lightweight threads", "Recursive functions", "Data structures", "Design patterns"], "correct": 0 }
+    },
+    {
+      "sq": { "question": "Si quhet sistemi i Rust-it që garanton siguri memorie?", "options": ["Garbage Collection", "Reference Counting", "Ownership", "Memory Pool"], "correct": 2 },
+      "en": { "question": "What is Rust's system that guarantees memory safety called?", "options": ["Garbage Collection", "Reference Counting", "Ownership", "Memory Pool"], "correct": 2 }
+    },
+    {
+      "sq": { "question": "Kush krijoi TypeScript?", "options": ["Satya Nadella", "Anders Hejlsberg", "Bill Gates", "Mark Zuckerberg"], "correct": 1 },
+      "en": { "question": "Who created TypeScript?", "options": ["Satya Nadella", "Anders Hejlsberg", "Bill Gates", "Mark Zuckerberg"], "correct": 1 }
+    },
+    {
+      "sq": { "question": "Sa perqind e faqeve web ne bote perdorin PHP?", "options": ["Mbi 25%", "Mbi 50%", "Mbi 75%", "Mbi 95%"], "correct": 2 },
+      "en": { "question": "What percentage of websites in the world use PHP?", "options": ["Over 25%", "Over 50%", "Over 75%", "Over 95%"], "correct": 2 }
+    },
+    {
+      "sq": { "question": "Kush krijoi Ruby?", "options": ["Yukihiro Matsumoto", "David Heinemeier Hansson", "Linus Torvalds", "Guido van Rossum"], "correct": 0 },
+      "en": { "question": "Who created Ruby?", "options": ["Yukihiro Matsumoto", "David Heinemeier Hansson", "Linus Torvalds", "Guido van Rossum"], "correct": 0 }
+    },
+    {
+      "sq": { "question": "Cila gjuhe u be zyrtare per Android ne 2017?", "options": ["Java", "Kotlin", "C#", "Python"], "correct": 1 },
+      "en": { "question": "Which language became official for Android in 2017?", "options": ["Java", "Kotlin", "C#", "Python"], "correct": 1 }
+    },
+    {
+      "sq": { "question": "Kush krijoi Swift?", "options": ["Tim Cook", "Chris Lattner", "Steve Jobs", "Craig Federighi"], "correct": 1 },
+      "en": { "question": "Who created Swift?", "options": ["Tim Cook", "Chris Lattner", "Steve Jobs", "Craig Federighi"], "correct": 1 }
+    },
+    {
+      "sq": { "question": "Cfare framework-u perdor Dart?", "options": ["React Native", "Flutter", "Xamarin", "Ionic"], "correct": 1 },
+      "en": { "question": "What framework does Dart use?", "options": ["React Native", "Flutter", "Xamarin", "Ionic"], "correct": 1 }
+    },
+    {
+      "sq": { "question": "Per cka perdoret kryesisht Scala?", "options": ["Game development", "Big Data (Apache Spark)", "Mobile apps", "Desktop apps"], "correct": 1 },
+      "en": { "question": "What is Scala mainly used for?", "options": ["Game development", "Big Data (Apache Spark)", "Mobile apps", "Desktop apps"], "correct": 1 }
+    },
+    {
+      "sq": { "question": "Kush krijoi Elixir?", "options": ["Robert Virding", "Joe Armstrong", "Jose Valim", "Eric Merritt"], "correct": 2 },
+      "en": { "question": "Who created Elixir?", "options": ["Robert Virding", "Joe Armstrong", "Jose Valim", "Eric Merritt"], "correct": 2 }
+    }
+  ],
+  "quizContent": {
+    "sq": {
+      "title": "Testoni Njohurite Tuaja",
+      "description": "Pergjigjuni 15 pyetjeve me kujdes. Cdo pergjigje e sakte jep +2 pike, cdo pergjigje e gabuar merr -1 pike.",
+      "correctMsg": "Sakte! +2 pike",
+      "wrongMsg": "Gabim! -1 pike",
+      "selectMsg": "Zgjidhni nje pergjigje",
+      "resultsTitle": "Rezultati Juaj",
+      "outOf": "nga 30 pike",
+      "perfect": "Perfekt! 30/30! Je nje ekspert i vertete!",
+      "good": "Shume mire! Ke njohuri te thella ne gjuhet e programimit.",
+      "average": "Rezultat i mire! Vazhdo te mesosh dhe do permiresohesh.",
+      "poor": "Mund te besh me mire! Provo edhe nje here per te permiresuar rezultatin.",
+      "restart": "Provo Perseri",
+      "progress": "Pyetja"
+    },
+    "en": {
+      "title": "Test Your Knowledge",
+      "description": "Answer 15 questions carefully. Each correct answer gives +2 points, each wrong answer gives -1 point.",
+      "correctMsg": "Correct! +2 points",
+      "wrongMsg": "Wrong! -1 point",
+      "selectMsg": "Select an answer",
+      "resultsTitle": "Your Results",
+      "outOf": "out of 30 points",
+      "perfect": "Perfect! 30/30! You are a true expert!",
+      "good": "Very good! You have deep knowledge of programming languages.",
+      "average": "Good result! Keep learning and you will improve.",
+      "poor": "You can do better! Try again to improve your score.",
+      "restart": "Try Again",
+      "progress": "Question"
+    }
+  }
 }
