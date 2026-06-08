@@ -85,16 +85,16 @@
   animation: bookEntrance 1s ease-out forwards;
   transform-style: preserve-3d;
   position: relative;
-  width: min(92vw, calc((100vh - 40px) * 1.640625));
+  width: min(94vw, calc((100vh - 15px) * 1.640625));
   aspect-ratio: 1050 / 640;
 }
 
 /* ===== SPINE ===== */
 .book-spine {
   position: absolute;
-  left: -34px;
+  left: -24px;
   top: -1px;
-  width: 34px;
+  width: 24px;
   height: calc(100% + 2px);
   background: linear-gradient(
     90deg,
@@ -278,8 +278,8 @@
   overflow-x: hidden;
 }
 
-.left-page { left: 0; padding: 28px 14px 28px 32px; }
-.right-page { right: 0; padding: 28px 32px 28px 14px; }
+.left-page { left: 0; padding: 22px 12px 22px 28px; }
+.right-page { right: 0; padding: 22px 28px 22px 12px; }
 
 .left-page::-webkit-scrollbar, .right-page::-webkit-scrollbar { width: 4px; }
 .left-page::-webkit-scrollbar-thumb, .right-page::-webkit-scrollbar-thumb {
@@ -387,11 +387,11 @@
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 36px 40px 36px 18px;
+  padding: 22px 28px 22px 12px;
 }
 
 .flipping-page.prev .flip-content {
-  padding: 36px 18px 36px 40px;
+  padding: 22px 12px 22px 28px;
 }
 
 /* ===== PAGE NUMBER ===== */
@@ -1292,8 +1292,8 @@
   outline-offset: 3px;
 }
 
-.nav-prev { left: -65px; }
-.nav-next { right: -65px; }
+.nav-prev { left: -55px; }
+.nav-next { right: -55px; }
 
 /* ===== KEYBOARD HINT ===== */
 .keyboard-hint {
@@ -1449,13 +1449,13 @@
   .book-ribbon { display: none; }
   .book-wrapper { padding: 6px; }
 
-  .book-spine { width: 20px; left: -20px; }
-  .book-spine::after { font-size: 8px; width: 300px; letter-spacing: 3px; }
+  .book-spine { width: 16px; left: -16px; }
+  .book-spine::after { font-size: 7px; width: 250px; letter-spacing: 2px; }
 
-  .left-page, .right-page { padding: 18px 10px 18px 20px; }
-  .right-page { padding: 18px 20px 18px 10px; }
-  .flip-content { padding: 20px 22px 20px 12px; }
-  .flipping-page.prev .flip-content { padding: 20px 12px 20px 22px; }
+  .left-page, .right-page { padding: 16px 10px 16px 18px; }
+  .right-page { padding: 16px 18px 16px 10px; }
+  .flip-content { padding: 16px 18px 16px 10px; }
+  .flipping-page.prev .flip-content { padding: 16px 10px 16px 18px; }
 
   .cover-title { font-size: 30px; letter-spacing: 2px; }
   .cover-title-line { font-size: 14px; letter-spacing: 5px; }
@@ -1481,14 +1481,14 @@
 
 @media (max-width: 600px), (max-height: 600px) {
   .book-wrapper { padding: 4px; }
-  .book-spine { width: 14px; left: -14px; }
-  .book-spine::after { font-size: 6px; width: 200px; letter-spacing: 2px; }
+  .book-spine { width: 10px; left: -10px; }
+  .book-spine::after { display: none; }
   .page-edges-right, .page-edges-bottom { display: none; }
 
-  .left-page, .right-page { padding: 14px 8px 14px 14px; }
-  .right-page { padding: 14px 14px 14px 8px; }
-  .flip-content { padding: 14px 14px 14px 8px; }
-  .flipping-page.prev .flip-content { padding: 14px 8px 14px 14px; }
+  .left-page, .right-page { padding: 10px 6px 10px 12px; }
+  .right-page { padding: 10px 12px 10px 6px; }
+  .flip-content { padding: 10px 12px 10px 6px; }
+  .flipping-page.prev .flip-content { padding: 10px 6px 10px 12px; }
 
   .cover-title { font-size: 22px; letter-spacing: 1px; }
   .cover-title-line { font-size: 11px; letter-spacing: 4px; }
