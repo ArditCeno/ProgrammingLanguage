@@ -1,7 +1,9 @@
 /* ===== DESK BACKGROUND (Tavolinë druri) ===== */
 .book-wrapper {
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background:
@@ -25,7 +27,7 @@
     );
   position: relative;
   overflow: hidden;
-  padding: 30px;
+  padding: 10px;
 }
 
 /* Table vignette */
@@ -42,14 +44,15 @@
   perspective: 3000px;
   position: relative;
   z-index: 1;
+  line-height: 0;
 }
 
 .book {
   transform: rotateX(3.5deg) rotateY(0.5deg);
   transform-style: preserve-3d;
   position: relative;
-  width: 1050px;
-  height: 640px;
+  width: min(90vw, calc((100vh - 70px) * 1.640625));
+  aspect-ratio: 1050 / 640;
 }
 
 /* ===== SPINE ===== */
@@ -130,10 +133,10 @@
 /* ===== PAGE EDGES ===== */
 .page-edges-right {
   position: absolute;
-  right: -5px;
-  top: 2px;
-  width: 8px;
-  height: calc(100% - 4px);
+  right: -0.5%;
+  top: 0.3%;
+  width: 0.75%;
+  height: 99%;
   background: repeating-linear-gradient(
     0deg,
     #d8cebc 0px,
@@ -150,10 +153,10 @@
 
 .page-edges-bottom {
   position: absolute;
-  bottom: -5px;
-  left: 2px;
-  width: calc(100% - 4px);
-  height: 8px;
+  bottom: -0.5%;
+  left: 0.3%;
+  width: 99%;
+  height: 0.75%;
   background: repeating-linear-gradient(
     90deg,
     #d8cebc 0px,
@@ -935,50 +938,45 @@
 }
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 1100px) {
+@media (max-width: 1024px) {
   .book {
-    width: 90vw;
-    height: calc(90vw * 640 / 1050);
+    transform: rotateX(2.5deg) rotateY(0.3deg);
   }
 
   .book-ribbon {
     display: none;
   }
-}
 
-@media (max-width: 768px) {
-  .book {
-    width: 95vw;
-    height: calc(95vw * 640 / 1050);
-    transform: rotateX(2deg) rotateY(0deg);
+  .book-wrapper {
+    padding: 6px;
   }
 
   .book-spine {
-    width: 18px;
-    left: -18px;
+    width: 20px;
+    left: -20px;
   }
 
   .book-spine::after {
-    font-size: 9px;
+    font-size: 8px;
     width: 300px;
     letter-spacing: 3px;
   }
 
   .left-page,
   .right-page {
-    padding: 22px 12px 22px 22px;
+    padding: 20px 12px 20px 22px;
   }
 
   .right-page {
-    padding: 22px 22px 22px 12px;
+    padding: 20px 22px 20px 12px;
   }
 
   .flip-content {
-    padding: 22px 22px 22px 12px;
+    padding: 20px 22px 20px 12px;
   }
 
   .flipping-page.prev .flip-content {
-    padding: 22px 12px 22px 22px;
+    padding: 20px 12px 20px 22px;
   }
 
   .cover-title {
@@ -1007,14 +1005,18 @@
     inset: 13px;
   }
 
+  .cover-icon {
+    font-size: 30px;
+  }
+
   .nav-btn {
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
     font-size: 22px;
   }
 
-  .nav-prev { left: -22px; }
-  .nav-next { right: -22px; }
+  .nav-prev { left: -18px; }
+  .nav-next { right: -18px; }
 
   .page-number {
     font-size: 11px;
@@ -1026,15 +1028,39 @@
   .keyboard-hint {
     display: none;
   }
+
+  .lang-name {
+    font-size: 18px;
+  }
+
+  .lang-logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .lang-description {
+    font-size: 12px;
+  }
 }
 
-@media (max-width: 480px) {
-  .book {
-    width: 98vw;
-    height: calc(98vw * 640 / 1050);
+@media (max-width: 600px), (max-height: 600px) {
+  .book-wrapper {
+    padding: 4px;
   }
 
   .book-spine {
+    width: 14px;
+    left: -14px;
+  }
+
+  .book-spine::after {
+    font-size: 6px;
+    width: 200px;
+    letter-spacing: 2px;
+  }
+
+  .page-edges-right,
+  .page-edges-bottom {
     display: none;
   }
 
@@ -1047,6 +1073,14 @@
     padding: 14px 14px 14px 8px;
   }
 
+  .flip-content {
+    padding: 14px 14px 14px 8px;
+  }
+
+  .flipping-page.prev .flip-content {
+    padding: 14px 8px 14px 14px;
+  }
+
   .cover-title {
     font-size: 22px;
     letter-spacing: 1px;
@@ -1055,6 +1089,10 @@
   .cover-title-line {
     font-size: 11px;
     letter-spacing: 4px;
+  }
+
+  .cover-subtitle {
+    font-size: 12px;
   }
 
   .cover-categories {
@@ -1066,18 +1104,118 @@
     font-size: 13px;
   }
 
+  .cover-decoration {
+    margin-bottom: 16px;
+  }
+
+  .cover-line {
+    width: 40px;
+  }
+
+  .cover-icon {
+    font-size: 24px;
+  }
+
+  .cover-page::before {
+    inset: 5px;
+    border-width: 1px;
+  }
+  .cover-page::after {
+    inset: 9px;
+    border: none;
+  }
+
   .nav-btn {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     font-size: 18px;
   }
 
-  .nav-prev { left: -15px; }
-  .nav-next { right: -15px; }
+  .nav-prev { left: -14px; }
+  .nav-next { right: -14px; }
 
   .lang-toggle {
-    top: 8px;
-    right: 8px;
-    padding: 4px 10px;
+    top: 6px;
+    right: 6px;
+    padding: 3px 8px;
   }
+
+  .toggle-option {
+    font-size: 10px;
+  }
+
+  .toggle-slider {
+    width: 28px;
+    height: 14px;
+  }
+
+  .toggle-thumb {
+    width: 10px;
+    height: 10px;
+  }
+
+  .toggle-thumb.right {
+    left: 16px;
+  }
+
+  .book-label {
+    font-size: 11px;
+    margin-top: 8px;
+    padding: 4px 16px;
+  }
+
+  .book-progress {
+    margin-top: 6px;
+    gap: 4px;
+  }
+
+  .dot {
+    width: 4px;
+    height: 4px;
+  }
+
+  .dot.active {
+    width: 16px;
+  }
+
+  .lang-name {
+    font-size: 16px;
+  }
+
+  .lang-logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  .lang-description {
+    font-size: 11px;
+  }
+
+  .lang-usage {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+
+  .lang-code code {
+    font-size: 9px;
+  }
+
+  .lang-funfact p {
+    font-size: 10px;
+  }
+
+  .intro-title {
+    font-size: 16px;
+  }
+
+  .intro-paragraph {
+    font-size: 12px;
+  }
+
+  .page-number {
+    font-size: 9px;
+    bottom: 6px;
+  }
+  .page-number.left { left: 14px; }
+  .page-number.right { right: 14px; }
 }
