@@ -1,16 +1,57 @@
-# React + Vite
+# Programming Languages
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive web book built with **React** and a **3D page-flip animation**, showcasing 15 of the most popular programming languages — ranked by popularity.
 
-Currently, two official plugins are available:
+```
+npm run dev
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## What's Inside
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The book opens with a cover page, followed by an introduction explaining what programming languages are and how they are categorized into **Frontend**, **Backend**, and **Full Stack**.
 
-## Expanding the ESLint configuration
+Each language has its own two-page spread with:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Language logo
+- Category badge (Frontend / Backend / Full Stack)
+- Short description
+- Main use cases
+- A simple code example
+- A fun fact
+
+## Languages Included
+
+| Pages | Language | Category |
+|---|---|---|
+| 2-3 | Python | Backend |
+| 4-5 | JavaScript | Frontend / Full Stack |
+| 6-7 | Java | Backend |
+| 8-9 | C++ | Backend |
+| 10-11 | C# | Full Stack |
+| 12-13 | Go | Backend |
+| 14-15 | Rust | Backend |
+| 16-17 | TypeScript | Frontend / Full Stack |
+| 18-19 | PHP | Backend |
+| 20-21 | Ruby | Backend |
+| 22-23 | Kotlin | Backend |
+| 24-25 | Swift | Backend |
+| 26-27 | Dart | Frontend |
+| 28-29 | Scala | Backend |
+| 30-31 | Elixir | Backend |
+
+## Bilingual Support
+
+Toggle between **Shqip** (Albanian) and **English** using the button in the top-right corner.
+
+## Built With
+
+- [Vite](https://vite.dev/)
+- [React](https://react.dev/)
+- CSS 3D transforms for page-flip animation
+- [Devicon](https://devicon.dev/) for language logos
+
+## About This Project
+
+This was a spontaneous side project — I built it while waiting for a large file to download. What started as a quick way to kill time turned into a fully functional interactive book about programming languages. Proof that sometimes the best projects are the ones you never planned.
